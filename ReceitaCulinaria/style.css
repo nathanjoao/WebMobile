@@ -4,8 +4,8 @@
     align-items: flex-start;
 }
 .ModoPreparo{
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .img{
     display: flex;
@@ -20,4 +20,10 @@
 .desc{
     text-align: center;
     font-family:fantasy;
+}
+#cookie{
+    background-repeat: no-repeat;
+    background-image:url(cookie2.png);
+    background-position: 110%;
+
 }
