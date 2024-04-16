@@ -1,0 +1,23 @@
+.Ingradientes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ModoPreparo{
+    justify-content: start;
+    align-items: start;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecalho{
+    text-align: center;
+    align-items: baseline;
+    align-items: center;
+}
+.desc{
+    text-align: center;
+    font-family:fantasy;
+}
