@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+   
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 20vh);
+    color: white;
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: darkgrey;
+    text-align: center;
+    align-content: center;
+}
+.grid-item:hover{
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+    color: black;
+}
+.vermelho{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.roxo{
+    background-color: purple;
+}
