@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    gap: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.box  {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content .box {
+    flex: 1 1 35%;    
+}
+
+.sidebar .box {
+    flex: 1 1 55%;  
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    padding: 30px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+    padding: 30px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar .box {
+        flex: 1 1 35%
+    }
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .main-content, .sidebar {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+}
+
+
+/* Aplica estilos para telas com largura máxima de 500px */
+@media (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  /* Aplica estilos para telas com largura mínima de 600px */
+  @media (min-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  /* Aplica estilos para telas entre 800px e 900px de largura */
+  @media (min-width: 800px) and (max-width: 900px) {
+    body {
+      background-color: lightcoral;
+    }
+  }
