@@ -33,6 +33,7 @@ body, html {
 }
 .textoH, .textoR, .textoA{
     font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(218, 165, 32);
     text-align: center;
 }
@@ -44,9 +45,25 @@ body, html {
     padding: 50px 200px;
     font-size: 30px;
 }
-.inicio{
+.link{
+    display: flex;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
-    text-align: center;
+    transition: background-color 0.3s ease;
+    
+}
+.link:hover {
+  background-color: #0056b3;
+}
+.main-content{
+    justify-content: center;
+    flex: 1 1 30%; 
+    min-width: 300px; 
+    height: auto;
 }
 
 

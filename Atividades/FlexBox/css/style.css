@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
 }
 
 .header {
@@ -14,11 +14,12 @@ body, html {
     height: 50px;
     background-color: rgb(0, 0, 0);
     color: rgb(218, 165, 32);
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.textH,.textA,.textR{
+.textH,.textA,.textR,.textF,.textRR,.textM{
     color:white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
 }
 
@@ -29,7 +30,7 @@ body, html {
 .divC, .divL {
     display: flex;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
     font-size: 30px;
     justify-content: center;
     color: rgb(218, 165, 32);
@@ -62,6 +63,7 @@ body, html {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-content {
