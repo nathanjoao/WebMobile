@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 165, 32);
+}
+
+.img {
+    text-align: center;
+}
+
+.divC, .divL {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    justify-content: center;
+    color: rgb(218, 165, 32);
+}
+
+.container, .container2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fbox1, .fbox2, .fbox3, .box1, .box2, .box3 {
+    padding: 30px;
+    color: rgb(218, 165, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.flink1, .flink2, .flink3, .link1, .link2, .link3 {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para garantir que se ajustem em telas menores */
+}
+
+.main-content iframe {
+    flex: 1 1 30%; /* Ajusta a largura das iframes */
+    min-width: 300px; /* Define uma largura mínima para as iframes */
+    height: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .main-content iframe {
+        flex: 1 1 30%; /* Ajusta a largura das iframes */
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .main-content iframe {
+        flex: 1 1 30%; /* Ajusta a largura das iframes */
+    }
+}
