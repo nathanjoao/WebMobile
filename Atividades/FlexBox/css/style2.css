@@ -37,8 +37,8 @@ body, html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     text-align: justify;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .titulo{
     display: flex;
