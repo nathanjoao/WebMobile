@@ -7,15 +7,35 @@ body, html {
 
 .header {
     display: flex;
-    padding: 30px;
-    align-items: center;
     justify-content: space-between;
-    font-size: 40px;
-    height: 90px; 
-    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
     color: rgb(218, 165, 32);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
 }
+  
+  .hamburguer {
+    margin: auto 0;
+    margin-right: 20px;
+    align-self: flex-start;
+    width: 90px;
+    height: 90px;
+}
+  
+  .headerT {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    text-align: center;
+
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Adiciona a propriedade width: 100% */
+  }
 
 .textH,.textA,.textR,.textF,.textRR,.textM{
     color:white;
@@ -29,12 +49,18 @@ body, html {
 
 .divC, .divL {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(243, 243, 243);
     font-size: 30px;
     justify-content: center;
-    color: rgb(218, 165, 32);
+    color: black;
+    background-color: rgb(218, 165, 32);
+    border-radius: 15px;
+    max-width: 300px;
+    align-items: center;
+    margin: 0 auto; 
 }
+
 
 .container, .container2 {
     display: flex;
@@ -68,17 +94,13 @@ body, html {
 .flink1:hover, .flink2:hover, .flink3:hover, .link1:hover, .link2:hover, .link3:hover,.linkH1:hover, .linkH2:hover{
     color: rgb(218, 165, 32);
 }
-.links {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 .linkH1,
 .linkH2 {
 
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 10px;
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 8px;
 }
@@ -96,18 +118,11 @@ body, html {
     min-width: 300px; 
     height: auto;
 }
-.hamburguer {
-    width: 65px;
-    height: 70px;
-    align-self: center;
-
+.div0{
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
 }
 
-.headerT {
-    flex: 1; 
-    text-align: center;
-    align-self: center;
-}
 
 @media (min-width: 576px) {
     .container, .container2 {

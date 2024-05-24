@@ -2,51 +2,67 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
 }
-.header{
+.header {
     display: flex;
-    padding: 30px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
-    font-size: 40px;
+    padding: 20px;
+    background-color: #000;
     color: rgb(218, 165, 32);
+    position: relative;
+}
+.headerT{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+  
+  .hamburguer {
+    margin: auto 0;
+    margin-right: 20px;
+    align-self: flex-start;
+    width: 90px;
+    height: 90px;
 }
 .img{
     text-align: center;
+    width: 400px;
+
 }
 
-
-.div0{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-}
 .containerH{
+    display: flex;
     background-color: black;
     border-radius: 15px;
-    height: 300px;
-    max-width: 1400px;
-    margin-right: 55px;
-    margin-left: 55px;
+    max-width: 1150px;
+    margin: 0 auto;
+    justify-content: center;
+    
 }
 .textoH, .textoR, .textoA{
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     text-align: justify;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    letter-spacing: 2px;
 }
 .titulo{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    color: rgb(218, 165, 32);
-    padding: 50px 200px;
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
     font-size: 30px;
+    justify-content: center;
+    color: black;
+    background-color: rgb(218, 165, 32);
+    border-radius: 15px;
+    max-width: 300px;
+    align-items: center;
+    margin: 0 auto; 
 }
 .link{
     display: flex;
@@ -57,16 +73,24 @@ body, html {
     font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 .link:hover {
     color: rgb(218, 165, 32);
 }
+
 .main-content{
+    display: flex;
     justify-content: center;
     flex: 1 1 30%; 
     min-width: 300px; 
     height: auto;
 }
+.div0{
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
+}
+
 
 
 @media (min-width: 576px) {
