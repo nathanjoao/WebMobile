@@ -7,35 +7,34 @@ body, html {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 20px;
     background-color: #000;
     color: rgb(218, 165, 32);
-    position: relative;
-}
+  }
   
-  .hamburguer {
-    margin: auto 0;
+  .hamburger {
+    display: flex;
     margin-right: 20px;
     align-self: flex-start;
-    width: 90px;
-    height: 90px;
-}
+    width: 50px;
+    height: 40px; 
+  }
   
   .headerT {
     display: flex;
-    flex-direction: column;
     font-size: 50px;
-    text-align: center;
-
+    justify-content: center; 
   }
   
-  .links {
+  
+  .subHeader {
     display: flex;
     justify-content: center;
     width: 100%; /* Adiciona a propriedade width: 100% */
-  }
+    background-color: rgb(218, 165, 32);
+    color: #000;
+}
 
 .textH,.textA,.textR,.textF,.textRR,.textM{
     color:white;
@@ -65,7 +64,7 @@ body, html {
 .container, .container2 {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 50px;
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
     gap: 20px;
@@ -91,18 +90,21 @@ body, html {
     font-size: 10px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.flink1:hover, .flink2:hover, .flink3:hover, .link1:hover, .link2:hover, .link3:hover,.linkH1:hover, .linkH2:hover{
+.flink1:hover, .flink2:hover, .flink3:hover, .link1:hover, .link2:hover, .link3:hover{
     color: rgb(218, 165, 32);
 }
 
 .linkH1,
 .linkH2 {
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 8px;
+}
+.linkH1:hover, .linkH2:hover{
+    color: white;
 }
 
 .main-content {
@@ -115,7 +117,7 @@ body, html {
 
 .main-content iframe {
     flex: 1 1 30%; 
-    min-width: 300px; 
+    min-width: 350px; 
     height: auto;
 }
 .div0{
