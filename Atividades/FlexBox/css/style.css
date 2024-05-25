@@ -20,15 +20,15 @@ body, html {
 
 .headerT {
     font-size: 50px;
-    flex-grow: 1; /* Faz o texto "FLEXCAR" ocupar todo o espaço restante */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    flex-grow: 1;
+    text-align: center;
 }
 
   
 .subHeader {
     display: flex;
     justify-content: center;
-    width: 100%; /* Adiciona a propriedade width: 100% */
+    width: 100%; 
     background-color: rgb(218, 165, 32);
     color: #000;
 }
@@ -67,7 +67,7 @@ body, html {
     gap: 20px;
     max-width: 1150px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Para garantir que se ajustem em telas menores */
+    flex-wrap: wrap; 
 }
 
 .fbox1, .fbox2, .fbox3, .box1, .box2, .box3 {
@@ -81,11 +81,12 @@ body, html {
 }
 
 .flink1, .flink2, .flink3, .link1, .link2, .link3 {
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    border: 1px solid rgb(218, 165, 32); 
+    color: rgb(255, 255, 255); 
+    padding: 5px 10px; 
+    text-decoration: none; 
+    transition: color 0.3s; 
     font-size: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .flink1:hover, .flink2:hover, .flink3:hover, .link1:hover, .link2:hover, .link3:hover{
     color: rgb(218, 165, 32);
@@ -109,7 +110,7 @@ body, html {
     flex-direction: row;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* Para garantir que se ajustem em telas menores */
+    flex-wrap: wrap; 
 }
 
 .main-content iframe {
@@ -129,7 +130,7 @@ body, html {
     }
 
     .main-content iframe {
-        flex: 1 1 30%; /* Ajusta a largura das iframes */
+        flex: 1 1 30%; /
     }
 }
 
@@ -139,6 +140,6 @@ body, html {
     }
 
     .main-content iframe {
-        flex: 1 1 30%; /* Ajusta a largura das iframes */
+        flex: 1 1 30%; 
     }
 }

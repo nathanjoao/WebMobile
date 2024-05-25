@@ -6,32 +6,68 @@ body, html {
 }
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #000;
     color: rgb(218, 165, 32);
-    position: relative;
 }
-.headerT{
+
+.hamburger, .icon2 {
+    width: 50px;
+    height: 40px;
+}
+
+.headerT {
+    font-size: 50px;
+    flex-grow: 1; 
+    text-align: center; 
+} 
+.subHeader {
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    width: 100%; /* Adiciona a propriedade width: 100% */
+    background-color: rgb(218, 165, 32);
+    color: #000;
+}
+.linkH1,
+.linkH2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+}
+.linkH1:hover, .linkH2:hover{
+    color: white;
 }
   
-  .hamburguer {
-    margin: auto 0;
-    margin-right: 20px;
-    align-self: flex-start;
-    width: 90px;
-    height: 90px;
+.subHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Adiciona a propriedade width: 100% */
+    background-color: rgb(218, 165, 32);
+    color: #000;
 }
 .img{
     text-align: center;
     width: 400px;
-
 }
-
+.nome{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(218, 165, 32);; 
+}
+.box{
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    background-color: #000;
+    height: 200px;
+    width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+}
 .container{
     display: flex;
     background-color: black;
@@ -39,7 +75,7 @@ body, html {
     max-width: 1150px;
     margin: 0 auto;
     justify-content: center;
-    
+    flex-direction: column; 
 }
 .textoH, .textoR, .textoA{
     font-size: 18px;
@@ -55,28 +91,29 @@ body, html {
     display: flex;
     padding: 20px;
     background-color: rgb(243, 243, 243);
-    font-size: 30px;
+    font-size: 20px;
     justify-content: center;
     color: black;
     background-color: rgb(218, 165, 32);
     border-radius: 15px;
-    max-width: 300px;
+    width: 300px;
     align-items: center;
     margin: 0 auto; 
 }
 .link{
     display: flex;
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(218, 165, 32);
     text-decoration: none;
     font-size: 10px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
+
 }
 .link:hover {
-    color: rgb(218, 165, 32);
+    color: white
 }
 
 .main-content{
