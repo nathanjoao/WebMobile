@@ -10,6 +10,7 @@ body, html {
     padding: 12px;
     background-color: #000;
     color: rgb(218, 165, 32);
+    width: 100%;
 }
 .logo{
     width: 140px;
@@ -212,10 +213,6 @@ body, html {
         padding: 20px;
         background-color: #000;
         color: rgb(218, 165, 32);
-    }
-    .logo{
-        width: 170px;
-        height: 180px;
     }
     .hamburger, .icon2 {
         width: 50px;
