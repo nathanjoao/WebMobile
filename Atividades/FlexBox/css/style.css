@@ -7,9 +7,13 @@ body, html {
 .header {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 12px;
     background-color: #000;
     color: rgb(218, 165, 32);
+}
+.logo{
+    width: 140px;
+    height: 150px;
 }
 .hamburger, .icon2 {
     width: 50px;
@@ -39,7 +43,7 @@ body, html {
     margin-bottom: 20px;
 }
 .headerT {
-    font-size: 50px;
+    font-size: 40px;
     flex-grow: 1;
     text-align: center;
 }
@@ -62,12 +66,12 @@ body, html {
     display: flex;
     padding: 20px;
     background-color: rgb(243, 243, 243);
-    font-size: 30px;
+    font-size: 20px;
     justify-content: center;
     color: black;
     background-color: rgb(218, 165, 32);
     border-radius: 15px;
-    max-width: 300px;
+    width: 250px;
     align-items: center;
     margin: 0 auto; 
 }
@@ -78,7 +82,7 @@ body, html {
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
     gap: 20px;
-    max-width: 1150px;
+    width: 450px;
     margin: 0 auto;
     flex-wrap: wrap; 
 }
@@ -105,7 +109,7 @@ body, html {
 .linkH1, .linkH2 {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 8px;
 }
@@ -120,7 +124,7 @@ body, html {
     flex-wrap: wrap; 
 }
 .main-content iframe {
-    flex: 1 1 30%; 
+    flex: 1 30%; 
     min-width: 350px; 
     height: auto;
 }
@@ -151,13 +155,13 @@ body, html {
     margin-top: 50px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 640px) {
     .container, .container2 {
         flex-wrap: wrap;
     }
 
     .main-content iframe {
-        flex: 1 1 30%; /
+        flex: 1 1 60%; /
     }
     .textS, .texttel{
         font-size: 18px;
@@ -176,10 +180,7 @@ body, html {
     }
 }
 
-@media (min-width: 992px) {
-    .container, .container2 {
-        flex-direction: row;
-    }
+@media (min-width: 1025px) {
 
     .main-content iframe {
         flex: 1 1 30%; 
@@ -204,5 +205,88 @@ body, html {
         text-align: justify;
         letter-spacing: 2px;
         margin: 0 auto;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #000;
+        color: rgb(218, 165, 32);
+    }
+    .logo{
+        width: 170px;
+        height: 180px;
+    }
+    .hamburger, .icon2 {
+        width: 50px;
+        height: 40px;
+    }
+    .telefone,.placeholder{
+        display: flex;
+        width: 50px;
+        height: 40px;
+    }
+    .containerTP{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .linkS{
+        display: flex;
+        margin-top: 10px;
+        color: rgb(218, 165, 32);
+        text-decoration: none;
+        font-size: 10px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .headerT {
+        font-size: 50px;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .subHeader {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        background-color: rgb(218, 165, 32);
+        color: #000;
+    }
+    .textH,.textA,.textR,.textF,.textRR,.textM{
+        color:white;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+    .main-content1{
+        justify-content: center;
+    }
+    .divC, .divL {
+        display: flex;
+        padding: 20px;
+        background-color: rgb(243, 243, 243);
+        font-size: 30px;
+        justify-content: center;
+        color: black;
+        background-color: rgb(218, 165, 32);
+        border-radius: 15px;
+        max-width: 300px;
+        align-items: center;
+        margin: 0 auto; 
+    }
+    .container, .container2 {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        border-radius: 15px;
+        background-color: rgb(0, 0, 0);
+        gap: 20px;
+        width: 1150px;
+        margin: 0 auto;
+        flex-wrap: wrap; 
+        
     }
 }
