@@ -10,7 +10,7 @@ body, html {
     padding: 12px;
     background-color: #000;
     color: rgb(218, 165, 32);
-    width: 100%;
+    width: auto;
 }
 .logo{
     width: 140px;
@@ -20,18 +20,7 @@ body, html {
     width: 50px;
     height: 40px;
 }
-.telefone,.placeholder{
-    display: flex;
-    width: 50px;
-    height: 40px;
-}
-.containerTP{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
+
 .linkS{
     display: flex;
     margin-top: 10px;
@@ -76,16 +65,15 @@ body, html {
     align-items: center;
     margin: 0 auto; 
 }
-.container, .container2 {
-    display: flex;
+.container, .container2 { 
     justify-content: space-around;
     padding: 50px;
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
-    gap: 20px;
-    width: 450px;
+    width: auto;
     margin: 0 auto;
     flex-wrap: wrap; 
+   
 }
 .fbox1, .fbox2, .fbox3, .box1, .box2, .box3 {
     padding: 30px;
@@ -141,48 +129,118 @@ body, html {
     display: flex;
     background-color: black;
     border-radius: 15px;
-    max-width: 1150px;
+    width: auto;
     margin: 0 auto;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
-    flex-direction: row;
 }
-.textS, .texttel{
+
+.containerTP{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.texttel {
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin-left: 10px; 
+    margin-top: 0; 
+    
+}
+
+
+.telefone,.gmail,.placeholder{
+    width: 50px;
+    height: 40px;
+}
+.textS{
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
 }
+
 
 @media (min-width: 640px) {
     .container, .container2 {
         flex-wrap: wrap;
     }
-
-    .main-content iframe {
-        flex: 1 1 60%; /
+    .containerA{
+        display: flex;
+        background-color: black;
+        border-radius: 15px;
+        width: auto;
+        margin: 0 auto;
+        flex-direction: column; 
+        align-items: center;
+        height: 300px;
+        justify-content: center;
     }
-    .textS, .texttel{
-        font-size: 18px;
+    
+    .containerTP{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .icon-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .texttel {
+        font-size: 22px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: rgb(255, 255, 255);
-        text-align: justify;
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: 50px;
-        letter-spacing: 2px;
-        margin: 0 auto;
+        margin-left: 10px; 
+        margin-top: 0;  
+    }
+    
+    .telefone,.gmail,.placeholder{
+        width: 50px;
+        height: 40px;
+    }
+    .main-content iframe {
+        flex: 1 1 60%; /
     }
     .main-content1{
         justify-content: center;
         align-items: center;
     }
+    .textS{
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 50px;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
 }
 
 @media (min-width: 1025px) {
-
+    
     .main-content iframe {
         flex: 1 1 30%; 
     }
@@ -196,39 +254,56 @@ body, html {
         text-align: justify;
         letter-spacing: 2px;
     }
-    .texttel{
-        font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: 50px;
-        text-align: justify;
-        letter-spacing: 2px;
-        margin: 0 auto;
-    }
-    .header {
+    .containerA{
         display: flex;
+        background-color: black;
+        border-radius: 15px;
+        width: 1200px;
+        flex-direction: column; 
+        height: 300px;
+        justify-content: center;
         align-items: center;
-        padding: 20px;
-        background-color: #000;
-        color: rgb(218, 165, 32);
     }
-    .hamburger, .icon2 {
-        width: 50px;
-        height: 40px;
-    }
-    .telefone,.placeholder{
-        display: flex;
-        width: 50px;
-        height: 40px;
-    }
+    
     .containerTP{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+    }
+    
+    .icon-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .texttel {
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        margin-left: 10px; 
+        margin-top: 0; 
+        
+    }
+    
+    .telefone,.gmail,.placeholder{
+        width: 50px;
+        height: 40px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #000;
+        color: rgb(218, 165, 32);
+        width: auto;
+    }
+    .hamburger, .icon2 {
+        width: 50px;
+        height: 40px;
     }
     .linkS{
         display: flex;
@@ -272,7 +347,8 @@ body, html {
         border-radius: 15px;
         max-width: 300px;
         align-items: center;
-        margin: 0 auto; 
+        margin: 0 auto;
+        text-align: center; 
     }
     .container, .container2 {
         display: flex;
