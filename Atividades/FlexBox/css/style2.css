@@ -24,21 +24,17 @@ body, html {
 }
 
 .headerT {
-    font-size: 50px;
-    flex-grow: 1; 
-    text-align: center; 
-} 
-
+    font-size: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
 .subHeader {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100%; 
     background-color: rgb(218, 165, 32);
     color: #000;
-    align-items: center;
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+    font-size: 10px ;
 }
 
 .linkH1, .linkH2 {
