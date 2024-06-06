@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+    font-family: "Space Grotesk", sans-serif;
+}
+.header{
+    display: flex;
+    width: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between; 
+}
+.hamburguer{
+    width: 20.92px;
+    height: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+.nome{
+    color: #3778FA;
+    font-size: 20px;  
+    margin-left: 20px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo{
+    display: flex;
+    font-size: 46px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+.subtitulo{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    font-size: medium;
+    margin-top: -20px;
+    text-align: center;
+
+}
