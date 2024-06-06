@@ -4,6 +4,9 @@ body, html {
     background-color: rgb(243, 243, 243);
     font-family: "Space Grotesk", sans-serif;
 }
+.container{
+   
+}
 .header{
     display: flex;
     width: auto;
@@ -19,11 +22,15 @@ body, html {
 }
 .nome{
     color: #3778FA;
-    font-size: 20px;  
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     margin-left: 20px;
-    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
-.container{
+.main-content{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -34,13 +41,35 @@ body, html {
     font-weight: bold;
     justify-content: center;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .subtitulo{
-    display: flex;
+    color: #000;
     font-size: 14px;
-    justify-content: center;
-    font-size: medium;
-    margin-top: -20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: -21px;
     text-align: center;
-
+    margin-left: 20px;
+    margin-right: 20px;
 }
+.containerBack{
+    width: 388px;
+    height: 207px;
+    border-radius: 16px;
+    background: #222;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: row;
+}
+.cel{
+    width: 110px;
+}
+.imgc{
+    display: flex;
+    justify-content: center;
+}
+
