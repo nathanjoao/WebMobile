@@ -9,16 +9,17 @@ body, html {
 }
 .header{
     display: flex;
-    width: auto;
-    height: 70px;
+    width: 428px;
+    height: 60px;
     align-items: center;
     justify-content: space-between; 
 }
 .hamburguer{
     width: 20.92px;
     height: 20px;
-    align-items: center;
     margin-right: 20px;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 .nome{
     color: #3778FA;
@@ -71,5 +72,6 @@ body, html {
 .imgc{
     display: flex;
     justify-content: center;
+    
 }
 
