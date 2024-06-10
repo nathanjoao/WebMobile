@@ -92,3 +92,30 @@ body, html {
     width: 388px;
     margin: 40px 20px 0px 20px;
 }
+.retangulo{
+    display: flex;
+    width: 388px;
+    height: 731px;
+    margin-left: 22px;
+    margin-right: 22px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F3F3F3;
+}
+.div0{
+    display: flex;
+    margin: 106px 28px 0px 28px;
+    background-color: black;
+    height: 100px;
+    border-radius: 16px;
+    width: 344px;
+    height: 255px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+.img4{
+    width: 202.138px;
+    height: 301px;
+    flex-shrink: 0;
+}
+
