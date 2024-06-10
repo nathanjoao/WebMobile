@@ -130,35 +130,107 @@ body, html {
     margin: 45px 28px 0px 28px;
     align-items: center;
 }
-.text1{
+.text1, .text3, .text4{
     color: #222;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px; 
 }
-.layout2{
+.text3{
+    margin-left: -29px;
+}
+.signal3{
+    margin-right: -29px;
+}
+.layout2 {
+    width: 344px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 9px;
+}
+
+.text2 {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+.sub {
+    flex-shrink: 0;
+    padding-left: 320px;
+    margin-top: -35px;
+}
+.subtext {
+    color: #65676C;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    margin-top: 5px; 
+    padding-right: 120px;
+    margin-left: 15px;
+}
+.layout3{
     display: flex;
     width: 344px;
     border-radius: 8px;
     background-color: white;
+    justify-content: space-around;
+    margin: 2px 28px 0px 28px;
     align-items: center;
-    margin: 9px;
+    height: 54px;
+    justify-content: space-around;
 }
-.text2{
-    color: #222;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; 
+.layout4{
+    display: flex;
+    width: 344px;
+    border-radius: 8px;
+    background-color: white;
+    justify-content: space-around;
+    margin: 10px 28px 40px 28px;
+    align-items: center;
+    height: 54px;
+    justify-content: space-around;
 }
-.signal{
-    width: 11px;
-    height: 11px;
+.end{
+    margin-top: 95px;
+    width: 428px;
+    height: 1043px;
     flex-shrink: 0;
-    margin-right: -4px;
-    margin-top: 7px;
-    margin-left: 27px;
+    border-radius: 20px 20px 0px 0px;
+    background: #3778FA;
+}
+.end1{
+    display: flex;
+    height: 414px;
+    background-color: beige;
+    border-radius: 20px 20px 0px 0px;
+    flex-direction: column;
+}
+.textEnd{
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; 
+    letter-spacing: -1.84px;  
+    margin-left: 22px;
+}
+.subtextEnd{
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 22px;
 }
 
 
