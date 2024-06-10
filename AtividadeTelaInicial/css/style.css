@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     font-family: "Space Grotesk", sans-serif;
 }
 .container{
@@ -35,6 +35,7 @@ body, html {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0px;
 }
 .titulo{
     display: flex;
@@ -62,14 +63,14 @@ body, html {
     height: 207px;
     border-radius: 16px;
     background: #222;
-    margin-top: 70px;
-    margin-left: 18px;
-    margin-right: 18px;
-    flex-direction: row;
+    margin: 70px 18px 0px 18px;
     justify-content: center;
+    
 }
 .cel{
     width: 100px;
+    margin-bottom: -20px;
+    padding: 5px;
 }
 .imgc{
     display: flex;
@@ -96,16 +97,17 @@ body, html {
     display: flex;
     width: 388px;
     height: 731px;
-    margin-left: 22px;
-    margin-right: 22px;
+    margin: 30px 22px 0px 22px;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #F3F3F3;
+    background: black;
+    flex-direction: column;
+    align-items: center;
 }
 .div0{
     display: flex;
-    margin: 106px 28px 0px 28px;
-    background-color: black;
+    margin-top: 100px;
+    background-color: white;
     height: 100px;
     border-radius: 16px;
     width: 344px;
@@ -117,5 +119,46 @@ body, html {
     width: 202.138px;
     height: 301px;
     flex-shrink: 0;
+    margin: -47px 15px 15px 0px
 }
+.layout1{
+    display: flex;
+    width: 344px;
+    border-radius: 8px;
+    background-color: white;
+    justify-content: space-around;
+    margin: 45px 28px 0px 28px;
+    align-items: center;
+}
+.text1{
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+}
+.layout2{
+    display: flex;
+    width: 344px;
+    border-radius: 8px;
+    background-color: white;
+    align-items: center;
+    margin: 9px;
+}
+.text2{
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+}
+.signal{
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    margin-right: -4px;
+    margin-top: 7px;
+    margin-left: 27px;
+}
+
 
