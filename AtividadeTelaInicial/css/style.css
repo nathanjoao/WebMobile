@@ -292,22 +292,31 @@ body, html {
 }
 .columnEnd3 {
     display: flex;
-    justify-content: center; 
+     
 }
 .column {
-    margin-right: 20px; 
+    margin: 0px 20px 0px 20px;
 }
-.textEnd {
-    color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 22px; 
-}
+
 .textEnd31 {
     font-weight: 500;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: -70px;
+}
+.textEnd321 {
+    font-weight: 400;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
 }
 .textEnd32 {
     font-weight: 400;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: -70px;
 }
 
 
