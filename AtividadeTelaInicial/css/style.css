@@ -283,42 +283,46 @@ body, html {
     line-height: 22px;
     margin-top: 4.5px;
     line-height: 2.1;
- 
 }
 .end3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    align-items: center; 
+  }
 .columnEnd3 {
     display: flex;
-     
+    justify-content: space-between; 
 }
 .column {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
 }
-
-.textEnd31 {
-    font-weight: 500;
-    color: #FFF;
-    font-size: 14px;
-    line-height: 22px;
-    margin-left: -70px;
-}
-.textEnd321 {
-    font-weight: 400;
-    color: #FFF;
-    font-size: 14px;
-    line-height: 22px;
-}
+.textEnd31,
+.textEnd321,
 .textEnd32 {
-    font-weight: 400;
     color: #FFF;
     font-size: 14px;
     line-height: 22px;
-    margin-right: -70px;
 }
-
+.textEnd1{
+    font-weight: 500;
+  }
+.textEnd321, .textEnd32{
+    font-weight: 400;
+}
+.end4{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 50px 10px 50px;
+}  
+.textEnd4{
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
 
 
 
