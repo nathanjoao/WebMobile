@@ -196,7 +196,7 @@ body, html {
     height: 54px;
     justify-content: space-around;
 }
-.end{
+.footer{
     margin-top: 95px;
     width: 428px;
     height: 1043px;
@@ -257,7 +257,7 @@ body, html {
     background-color: white;
     margin: 0 auto;
 }
-.end2{
+.end2, .end3{
     display: flex;
     margin: 55px 22px 15px 22px;
     justify-content: space-between;
@@ -275,17 +275,35 @@ body, html {
     font-weight: 500;
     line-height: normal;
 }
-.columnEnd2{
-    display: flex;
+.end3{
     flex-direction: column;
 }
 .textColumn{
-    margin: 21px px;  
+    margin: 21px 2px;  
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
+}
+.row1, .row2, .row3{
+    display: flex;
+    justify-content: space-between;
+}
+.textEnd31, .textEnd32{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px; 
+}
+.textEnd31{
+    font-weight: 500;
+}
+.textEnd32{
+    font-weight: 400;
+}
+.columnEnd3{
+     
 }
 
 
