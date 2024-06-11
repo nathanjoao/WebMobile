@@ -275,37 +275,41 @@ body, html {
     font-weight: 500;
     line-height: normal;
 }
-.end3{
-    flex-direction: column;
-}
-.textColumn{
-    margin: 21px 2px;  
+.columnEnd2{
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
+    margin-top: 4.5px;
+    line-height: 2.1;
+ 
 }
-.row1, .row2, .row3{
+.end3 {
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    align-items: center;
 }
-.textEnd31, .textEnd32{
+.columnEnd3 {
+    display: flex;
+    justify-content: center; 
+}
+.column {
+    margin-right: 20px; 
+}
+.textEnd {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     line-height: 22px; 
 }
-.textEnd31{
+.textEnd31 {
     font-weight: 500;
 }
-.textEnd32{
+.textEnd32 {
     font-weight: 400;
 }
-.columnEnd3{
-     
-}
+
 
 
 
