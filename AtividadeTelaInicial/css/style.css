@@ -148,7 +148,7 @@ body, html {
     height: 100px;
     border-radius: 8px;
     background-color: white;
-    margin: 9px;
+    margin: 0 auto;
 }
 .text2 {
     color: #222;
@@ -312,17 +312,285 @@ body, html {
 .end4{
     display: flex;
     flex-direction: column;
-    margin: 40px 50px 10px 50px;
+    margin: 50px 50px 20px 50px;
 }  
 .textEnd4{
     color: #FFF;
     text-align: center;
-    font-family: "Space Grotesk";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
 }
+.layoutfull{
+    flex-direction: column;
+}
+@media (min-width: 1024px) {
+    .container{
+        flex-direction: row;
+     }
+     .header{
+        display: flex;
+        width: 428px;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between; 
+    }
+    .nome{
+        color: #3778FA;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 40px 0px 17px 140px;
+    }
+    .hamburguer{
+        display: none;
+    }
+    .titulo{
+        color: #000;
+        text-align: center;
+        font-size: 136px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 156px; 
+        letter-spacing: -5.44px;
+    }
+    .subtitulo{
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; 
+        margin: -90px 520px 0px 520px;
+    }
+    .containerBack{
+        width: 1640px;
+        height: 769px;
+        flex-shrink: 0;
+        border-radius: 60px;
+        margin-top: 210px;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    .cel{
+        width: 423.285px;
+        height: 857.898px;
+        flex-shrink: 0;
+        padding: 25px;
+        margin-bottom: 35px;
+    }
+    .imgc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+     }
+     .titulo2{
+        color: #000;
+        text-align: center;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 116px; 
+        letter-spacing: -4px;
+        margin: 320px
+     }
+     .video{
+        width: 1640px;
+        height: 1118px;
+        flex-shrink: 0;
+        border-radius: 60px;
+        margin: 0 auto;
+        margin-top: -220px;
+     }
+     .retangulo{
+        width: 1640px;
+        height: 939px;
+        flex-shrink: 0;
+        border-radius: 60px;
+        background: #F3F3F3;
+        margin: 0 auto;
+        margin-top: -270px;
+        flex-direction: row ;
+    }
+    .img4{
+        width: 517px;
+        height: 819px;
+        flex-shrink: 0;
+        margin: -270px 20px 0px 310px;
 
+    }
+    .div0{
+        display: flex;
+    }
+    .layoutfull{
+        display: flex;
+        flex-direction: column;
+        margin-left: 310px;
+        gap: 17px;
+
+    }
+    .text1, .text2, .text3, .text4{
+        color: #222;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .text2{
+        margin-left: 77px;
+    }
+    .subtext{
+        margin-right: 350px;
+        margin-top: -20px;
+        margin-left: 77px;
+    }
+    .subtext{
+        color: #65676C;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.5px;
+    }
+    .layout1, .layout4, .layout3{
+        width: 842px;
+        height: 130px;
+    }
+    .layout2{
+        width: 842px; 
+        height: 191px;
+
+    }
+    .signal{
+        font-size: 30px;
+    }
+    .sub{
+        font-size: 30px;
+        margin-left: 430px;
+        margin-top: -70px;
+    }
+    .footer{
+        margin-top: 95px;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        border-radius: 70px 70px 0px 0px;;
+        background: #3778FA;
+    }
+    .end1{
+        display: flex;
+        height: 414px;
+        background: #3778FA;
+        border-radius: 20px 20px 0px 0px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .textEnd{
+        font-size: 136px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 146px; 
+        letter-spacing: -5.44px;
+        margin-left: 110px;
+        text-align: justify;
+    }
+    .subtextEnd{
+        display: flex;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; 
+        margin-top: -40px;
+        
+    }
+    .bottom{
+        width: 202px;
+        height: 72px;
+        flex-shrink: 0;
+        margin-top: 200px;
+    }
+    .bottomText{
+        color: #000;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .bar{
+        width: 1640px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+    }
+    .end2, .end3{
+        display: flex;
+        margin: 55px 22px 15px 22px;
+        justify-content: space-between;
+    }
+    .subtextEnd2{
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px; 
+    }
+    .textEnd2{
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .columnEnd2{
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        margin-top: 4.5px;
+        line-height: 2.1;
+    }
+    .end3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+    .columnEnd3 {
+        display: flex;
+        justify-content: space-between; 
+    }
+    .column {
+        margin: 0px 10px 0px 10px;
+    }
+    .textEnd31,
+    .textEnd321,
+    .textEnd32 {
+        color: #FFF;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .textEnd1{
+        font-weight: 500;
+      }
+    .textEnd321, .textEnd32{
+        font-weight: 400;
+    }
+    .end4{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 50px 20px 50px;
+    }  
+    .textEnd4{
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
 
 
