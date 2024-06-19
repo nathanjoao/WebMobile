@@ -100,4 +100,20 @@ body, html {
 .brandsLogos{
     display: flex;
     flex-direction: row;
+    margin: -2.1rem 1.2rem 0 1.2rem;
+    align-items: center;
+    gap: 1.2rem;
+    
+}
+#logoNike{
+    width: 3.5rem;
+}
+#logoAdidas{
+    width: 3.5rem;
+    height: 2rem;
+}
+#pumaLogo{
+    width: 6rem;
+    height: 4rem;
+    margin-bottom: 0.4rem;
 }
