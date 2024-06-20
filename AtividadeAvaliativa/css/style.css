@@ -126,7 +126,7 @@ body, html {
     display: flex;
     position: relative;
     align-items: center;
-    margin: 4.5rem 5rem 0rem 10.5rem;
+    margin: 4.5rem 5rem 0rem 10rem;
     justify-content: center;
 }
 .circle{
@@ -146,18 +146,43 @@ body, html {
     justify-content: space-between;
     gap: 7rem;
 }
+#top-left{
+    width: 6.85131rem;
+    height: 2.93106rem;
+    border-radius: 0.36638rem;
+    margin: -8rem -21rem;
+}
+#yellow-circle{
+    display: flex;
+    width: 2.19825rem;
+    height: 2.19825rem;
+    border-radius: 3.66381rem;
+    background: linear-gradient(45deg, #F8A422 13.75%, #FEDEAC 92.08%);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2.345px 8.207px 0px rgba(0, 0, 0, 0.09);
+    margin: 0.4rem 0 0 0.8rem;
+}
+#infos{
+    display: flex;
+    flex-direction: column;
+    font-family:"Poppins", sans-serif;
+}
+#trainer, #top-left{
+    background: #FFF;
+    box-shadow: 0px 11.724px 46.897px 0px rgba(51, 78, 123, 0.30);
+    align-items: center;
+}
 #trainer{
     display: flex;
     width: 6.8rem;
     height: 5.75rem;
     border-radius: 5.862px;
     background: #FFF;
-    box-shadow: 0px 11.724px 46.897px 0px rgba(51, 78, 123, 0.30);
     flex-direction: column;
-    align-items: center;
     margin-left: -4rem;
 }
-#text-trainer{
+#text-trainer, #infos-num{
     color: #262524;
     font-family:"Poppins", sans-serif;
     font-size: 0.58619rem;
