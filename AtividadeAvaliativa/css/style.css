@@ -122,17 +122,37 @@ body, html {
     width: 7rem;
     height: 5rem;
 }
-.image-container{
+.image-container-men{
     display: flex;
     position: relative;
     align-items: center;
-    margin: 7rem 5rem 0 5rem;
-}
-.background{
-    position: absolute;
-    z-index: 2;
+    margin: 4.5rem 0rem 0rem 2rem;
+    justify-content: center;
 }
 .circle{
-    position: absolute;
-    z-index: 1;
+    display: flex;
+    width: 35%;
+    height: 35.172px;
+    border-radius: 58.621px;
+    background:#4BACE1;
+    box-shadow: 0px 2.345px 8.207px 0px rgba(0, 0, 0, 0.09);
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7rem
+}
+#trainer{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 5.862px;
+    background: rgb(207, 204, 204);
+    box-shadow: 0px 11.724px 46.897px 0px rgba(51, 78, 123, 0.30);
+    flex-direction: column;
+   
 }
