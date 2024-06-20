@@ -2,15 +2,16 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(248, 245, 245);
-    
 }
  @import url('https://fonts.cdnfonts.com/css/sporting-grotesque');            
 #header{
     display: flex;
     align-items: center;
-    height: 90px;
+    height: px;
     width: 100%;
     background-color: #FFF;
+    justify-content: space-between;
+    gap: 10.12rem;
 }
 #logoPurple{
     font-family: 'Sporting Grotesque', sans-serif;
@@ -19,18 +20,18 @@ body, html {
     color: white;
     background-color: #6765F0;
     border-radius: 10px;
-    margin-left: 20px;
+    padding: 0.3rem;
+    margin-left: 1rem;
 }
 #logoContinuous{
     color: #6765F0;
     font-family: 'Sporting Grotesque', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-left: 0.3rem;
 }
 #hamb{
     display: flex;
-    margin-left: 11.5rem;
+    margin-right: 1rem;
 }
 .main{
     display: flex;
@@ -62,7 +63,7 @@ body, html {
     opacity: 0.6;
     line-height: 180%;
     letter-spacing: 0.12px;
-    margin: -3.3rem 4rem 0px 0;
+    margin: -3.3rem 4rem 0rem 0;
 }
 .aboutSite{
     display: flex;
