@@ -213,5 +213,8 @@ body, html {
     border-radius: 2.41813rem;
 }
 #bottom-left{
-
+    background: linear-gradient(50deg, #5478EF 15.91%, #D6DFFF 92.82%);
+    margin-top: -21rem;
+    margin-bottom: -6rem;
+    margin-left: -20.5rem;
 }
