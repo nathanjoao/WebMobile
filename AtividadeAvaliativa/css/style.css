@@ -126,33 +126,53 @@ body, html {
     display: flex;
     position: relative;
     align-items: center;
-    margin: 4.5rem 0rem 0rem 2rem;
+    margin: 4.5rem 5rem 0rem 10.5rem;
     justify-content: center;
 }
 .circle{
     display: flex;
-    width: 35%;
-    height: 35.172px;
-    border-radius: 58.621px;
-    background:#4BACE1;
+    height: 2.19825rem;
+    width: 2.19825rem;
+    border-radius: 70px;
+    background: linear-gradient(50deg, #4BACE1 15.91%, #D8F1FF 92.82%);
     box-shadow: 0px 2.345px 8.207px 0px rgba(0, 0, 0, 0.09);
     align-items: center;
     justify-content: center;
     padding: 4px;
 }
-.right-content{
+.right-content, .left-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 7rem
+    gap: 7rem;
 }
 #trainer{
-    
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 6.8rem;
+    height: 5.75rem;
     border-radius: 5.862px;
-    background: rgb(207, 204, 204);
+    background: #FFF;
     box-shadow: 0px 11.724px 46.897px 0px rgba(51, 78, 123, 0.30);
     flex-direction: column;
-   
+    align-items: center;
+    margin-left: -4rem;
+}
+#text-trainer{
+    color: #262524;
+    font-family:"Poppins", sans-serif;
+    font-size: 0.58619rem;
+    font-weight: 700;
+}
+#subtext-trainer{
+    color: #262524;
+    font-family:"Poppins", sans-serif;  
+    font-size: 0.43963rem;
+    font-weight: 400;
+    margin-top: -0.4rem;
+}
+.circle-trainer{
+    display: flex;
+    margin-top: 0.5rem;
+    background-color: #D388FF;
+    border-radius: 2.41813rem;
 }
