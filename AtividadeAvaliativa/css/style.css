@@ -167,7 +167,7 @@ body, html {
     box-shadow: 0px 2.345px 8.207px 0px rgba(0, 0, 0, 0.09);
     margin: 0.4rem 0 0 0.8rem;
 }
-#infos{
+#infos, #infos-kal{
     display: flex;
     flex-direction: column;
     font-family:"Poppins", sans-serif;
@@ -321,4 +321,11 @@ body, html {
     box-shadow: 0px 11.564px 46.255px 0px rgba(51, 78, 123, 0.30);
     margin-top: 12rem;
     align-items: center;
+}
+#infos-kal{
+
+}
+#title-infos{
+    font-size: 0.57819rem;
+    font-weight: 700;
 }
