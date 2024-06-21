@@ -38,7 +38,7 @@ body, html {
     margin-left: 1.2rem;
     flex-direction: column;
 }
-.title{
+.title, .title-workout{
     display: flex;
     font-family: 'Sporting Grotesque', sans-serif;
     color: #262524;
@@ -71,7 +71,7 @@ body, html {
     justify-content: space-around;
     margin-top: 1.3rem;
 }
-#startSite, #learnMore{
+.startSite1, #learnMore, .startSite2{
     display: flex;
     border-radius: 7.143px;
     font-family:"Poppins", sans-serif;
@@ -80,7 +80,7 @@ body, html {
     justify-content: space-around;
     align-items: center;
 }
-#startSite{
+.startSite1, .startSite2{
     width: 11rem;
     height: 2.5rem;
     background-color: #264373;
@@ -122,12 +122,14 @@ body, html {
     width: 7rem;
     height: 5rem;
 }
-.image-container-men{
+.image-container-men, .image-container-men2{
     display: flex;
     position: relative;
     align-items: center;
-    margin: 4.5rem 5rem 0rem 10rem;
     justify-content: center;
+}
+.image-container-men{
+    margin: 4.5rem 5rem 0rem 10rem;
 }
 #circle, #bottom-left{
     display: flex;
@@ -276,6 +278,34 @@ body, html {
     display:flex;
     flex-direction: column;
 }
-#arrow-container-exercices{
+#arrow-container-exercices1{
     margin: 2.2rem 0 0 -1.1rem;
+}
+#arrow-container-exercices2{
+    margin: 2.2rem 0 0 -2.1rem;
+}
+#arrow-container-exercices3{
+    margin: 2.2rem 0 0 -0.1rem;
+}
+#img3{
+    width: 50%;
+}
+.title-workout{
+    margin-right: 5rem;
+}
+.startSite2{
+    margin: 2.7rem 0 0 1.2rem;
+}
+.image-container-men2{
+    margin-top: 4.5rem;
+}
+#circle-blue-dark, #circle-blue-light, #circle-pink{
+
+}
+#box-left-men2{
+    width: 7.33581rem;
+    height: 2.89094rem;
+    border-radius: 0.36138rem;
+    background: #FFF;
+    box-shadow: 0px 11.564px 46.255px 0px rgba(51, 78, 123, 0.30);
 }
