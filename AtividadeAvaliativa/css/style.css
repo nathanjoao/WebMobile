@@ -54,7 +54,7 @@ body, html {
     display: flex;
     margin: 3.6rem 0rem 0rem -5.3rem;
 }
-.subtext{
+.subtext, .subtextLong{
     display: flex;
     font-family: "Poppins", sans-serif;
     color: #262524;
@@ -217,4 +217,40 @@ body, html {
     margin-top: -21rem;
     margin-bottom: -6rem;
     margin-left: -20.5rem;
+}
+.content{
+    display: flex;
+    margin: 5rem 0 0 1.2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.subtextLong{
+    display: flex;
+    margin-right: 1.5rem;
+}
+.exercices{
+    display: flex;
+    padding: 1.75rem;
+    border-radius: 1.875rem;
+    background: linear-gradient(87deg, #6462F0 0%, #9190E9 95.5%);
+    width: 70%;
+    height: 25.75rem;
+    flex-direction: column;
+    margin: 5rem 1.2rem 0 1.8rem;
+}
+.container-exercices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+#layout-container-exercices{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.25rem;
+    opacity: 0.2;
+    background-color: #262524;
+    align-items: center;
+    justify-content: center;
 }
