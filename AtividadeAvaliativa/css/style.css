@@ -300,12 +300,25 @@ body, html {
     margin-top: 4.5rem;
 }
 #circle-blue-dark, #circle-blue-light, #circle-pink{
-
+    display: flex;
+    width: 2.16819rem;
+    height: 2.16819rem;
+    align-items: center;
+    justify-content: center;
+}
+#circle-blue-dark{
+    background: linear-gradient(50deg, #5478EF 15.91%, #D6DFFF 92.82%);
+    filter: drop-shadow(0px 11.564px 46.255px rgba(51, 78, 123, 0.30));
+    border-radius: 1.80681rem;
+    margin-left: 0.7rem;
 }
 #box-left-men2{
+    display: flex;
     width: 7.33581rem;
     height: 2.89094rem;
     border-radius: 0.36138rem;
     background: #FFF;
     box-shadow: 0px 11.564px 46.255px 0px rgba(51, 78, 123, 0.30);
+    margin-top: 12rem;
+    align-items: center;
 }
