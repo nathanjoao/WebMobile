@@ -237,12 +237,14 @@ body, html {
     height: 25.75rem;
     flex-direction: column;
     margin: 5rem 1.2rem 0 1.8rem;
+    justify-content: space-between;
 }
 .container-exercices{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
 }
 #layout-container-exercices{
     display: flex;
@@ -250,7 +252,30 @@ body, html {
     height: 5rem;
     border-radius: 1.25rem;
     opacity: 0.2;
-    background-color: #262524;
+    background-color: #000000;
     align-items: center;
     justify-content: center;
+}
+.text-container-exercices{
+    font-weight: 700;
+    margin: 0 0 1.5rem 1.5rem;
+}
+.text-container-exercices, #subtext-container-exercices{
+    color: #FFF;
+    font-family:"Poppins", sans-serif; 
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.01rem;
+}
+#subtext-container-exercices{
+    font-weight: 400;
+    margin: -1.2rem 0 1.5rem 1.5rem;
+    opacity: 0.5;
+}
+.text-style{
+    display:flex;
+    flex-direction: column;
+}
+#arrow-container-exercices{
+    margin: 2.2rem 0 0 -1.1rem;
 }
