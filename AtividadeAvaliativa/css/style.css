@@ -38,7 +38,7 @@ body, html {
     margin-left: 1.2rem;
     flex-direction: column;
 }
-.title, .title-workout{
+.title, .title-workout, .title-morningWorkout{
     display: flex;
     font-family: 'Sporting Grotesque', sans-serif;
     color: #262524;
@@ -297,7 +297,11 @@ body, html {
     margin: 2.7rem 0 0 1.2rem;
 }
 .image-container-men2{
-    margin-top: 4.5rem;
+    margin: 4.5rem 0 0 4.5rem;
+
+}
+#men2{
+
 }
 #circle-blue-dark, #circle-blue-light, #circle-pink{
     display: flex;
@@ -319,13 +323,17 @@ body, html {
     border-radius: 0.36138rem;
     background: #FFF;
     box-shadow: 0px 11.564px 46.255px 0px rgba(51, 78, 123, 0.30);
-    margin-top: 12rem;
+    margin: 12rem 10rem 0 0;
     align-items: center;
 }
 #infos-kal{
-
+    gap: 0.25rem;
+    margin: 0 0 0.2rem 0.5rem;
 }
 #title-infos{
     font-size: 0.57819rem;
     font-weight: 700;
+}
+.title-morningWorkout{
+    margin: 8.2rem 0 0 1.2rem;
 }
