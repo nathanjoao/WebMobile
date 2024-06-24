@@ -201,7 +201,7 @@ body, html {
     display: flex;
     margin-left: 3.5rem;
 }
-#subtext-trainer, #infos-subtext{
+#subtext-trainer, #infos-subtext, #infos-subtext-men2{
     color: #262524;
     font-family:"Poppins", sans-serif;  
     font-size: 0.43963rem;
