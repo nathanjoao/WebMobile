@@ -4,7 +4,13 @@ body, html {
     background-color: rgb(248, 245, 245);
 }
  @import url('https://fonts.cdnfonts.com/css/sporting-grotesque');            
-#header{
+#fontP{
+    font-family: "Poppins", sans-serif;
+}
+#fontS{
+    font-family: 'Sporting Grotesque', sans-serif;
+}
+ #header{
     display: flex;
     align-items: center;
     height: px;
@@ -40,7 +46,6 @@ body, html {
 }
 .title, .title-workout, .title-morningWorkout{
     display: flex;
-    font-family: 'Sporting Grotesque', sans-serif;
     color: #262524;
     font-size: 28px;
     font-weight: 700;
@@ -56,7 +61,6 @@ body, html {
 }
 .subtext, .subtextLong, .subtext-morningWorkout{
     display: flex;
-    font-family: "Poppins", sans-serif;
     color: #262524;
     font-size: 12px;
     font-weight: 400;
@@ -74,7 +78,6 @@ body, html {
 .startSite1, #learnMore, .startSite2{
     display: flex;
     border-radius: 7.143px;
-    font-family:"Poppins", sans-serif;
     font-size: 0.75rem;
     font-weight: 400;
     justify-content: space-around;
@@ -94,7 +97,6 @@ body, html {
 }
 #brands{
     color: #262524;
-    font-family:"Poppins", sans-serif;
     font-size: 0.75rem;
     margin: 2.5rem 1.8rem;
 }
@@ -170,7 +172,6 @@ body, html {
 #infos, #infos-kal{
     display: flex;
     flex-direction: column;
-    font-family:"Poppins", sans-serif;
     gap: 0.75rem;
 }
 #trainer, #top-left{
@@ -190,7 +191,6 @@ body, html {
 #text-trainer, #infos-num{
     display: flex;
     color: #262524;
-    font-family:"Poppins", sans-serif;
     font-size: 0.58619rem;
     font-weight: 700;
 }
@@ -202,8 +202,7 @@ body, html {
     margin-left: 3.5rem;
 }
 #subtext-trainer, #infos-subtext, #infos-subtext-men2{
-    color: #262524;
-    font-family:"Poppins", sans-serif;  
+    color: #262524;  
     font-size: 0.43963rem;
     font-weight: 400;
     margin-top: -0.4rem;
@@ -352,3 +351,4 @@ body, html {
     background: #FFF;
     box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30);     
 }
+/*360
