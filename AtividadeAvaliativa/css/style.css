@@ -340,3 +340,15 @@ body, html {
 .subtext-morningWorkout{
     margin: 1rem 1.5rem 0 1.2rem ;
 }
+.contaier-woman{
+    display: flex;
+    margin: 5.5rem 0 0 3.5rem;
+}
+#box-left-woman{
+    display: flex;
+    width: 8.49331rem;
+    height: 3.34713rem;    
+    border-radius: 0.41838rem;
+    background: #FFF;
+    box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30);     
+}
