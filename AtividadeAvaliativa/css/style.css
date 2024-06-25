@@ -54,7 +54,7 @@ body, html {
     display: flex;
     margin: 3.6rem 0rem 0rem -5.3rem;
 }
-.subtext, .subtextLong{
+.subtext, .subtextLong, .subtext-morningWorkout{
     display: flex;
     font-family: "Poppins", sans-serif;
     color: #262524;
@@ -336,4 +336,7 @@ body, html {
 }
 .title-morningWorkout{
     margin: 8.2rem 0 0 1.2rem;
+}
+.subtext-morningWorkout{
+    margin: 1rem 1.5rem 0 1.2rem ;
 }
