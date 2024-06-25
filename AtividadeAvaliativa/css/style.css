@@ -4,14 +4,26 @@ body, html {
     background-color: rgb(248, 245, 245);
 }
  @import url('https://fonts.cdnfonts.com/css/sporting-grotesque');            
-#fontP{
+#header, #hamb, .main, .title, .title-workout, .title-morningWorkout, .divTitle, #men, .subtext, .subtextLong, .subtext-morningWorkout{
+    display: flex;
+}
+.aboutSite, .startSite1, #learnMore, .startSite2, .brandsLogos, .image-container-men, .image-container-men2, #circle, #bottom-left{
+    display: flex;
+}
+.right-content, .left-content, #infos, #infos-kal, #trainer, #text-trainer, #infos-num, #infos-subtext, .circle-trainer, .content, .subtextLong{
+    display: flex;
+}
+#yellow-circle, .exercicies, .container-exercices, #layout-container-exercices, .text-style, #circle-blue-dark, #circle-blue-light, #circle-pink, #box-left-men2{
+    display: flex;
+}
+.fontP{
     font-family: "Poppins", sans-serif;
 }
-#fontS{
+.fontS{
     font-family: 'Sporting Grotesque', sans-serif;
 }
- #header{
-    display: flex;
+ 
+#header{
     align-items: center;
     height: px;
     width: 100%;
@@ -36,31 +48,25 @@ body, html {
     font-weight: 400;
 }
 #hamb{
-    display: flex;
     margin-right: 1rem;
 }
 .main{
-    display: flex;
     margin-left: 1.2rem;
     flex-direction: column;
 }
 .title, .title-workout, .title-morningWorkout{
-    display: flex;
     color: #262524;
     font-size: 28px;
     font-weight: 700;
 }
 .divTitle{
-    display: flex;
     flex-direction: row;
     align-items: center;
 }
 #men{
-    display: flex;
     margin: 3.6rem 0rem 0rem -5.3rem;
 }
 .subtext, .subtextLong, .subtext-morningWorkout{
-    display: flex;
     color: #262524;
     font-size: 12px;
     font-weight: 400;
@@ -70,13 +76,11 @@ body, html {
     margin: -3.3rem 4rem 0rem 0;
 }
 .aboutSite{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 1.3rem;
 }
 .startSite1, #learnMore, .startSite2{
-    display: flex;
     border-radius: 7.143px;
     font-size: 0.75rem;
     font-weight: 400;
@@ -101,7 +105,6 @@ body, html {
     margin: 2.5rem 1.8rem;
 }
 .brandsLogos{
-    display: flex;
     flex-direction: row;
     margin: -2.5rem 2rem 0 2rem;
     align-items: center;
@@ -125,7 +128,6 @@ body, html {
     height: 5rem;
 }
 .image-container-men, .image-container-men2{
-    display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -134,7 +136,6 @@ body, html {
     margin: 4.5rem 5rem 0rem 10rem;
 }
 #circle, #bottom-left{
-    display: flex;
     height: 2.19825rem;
     width: 2.19825rem;
     border-radius: 70px;
@@ -147,7 +148,6 @@ body, html {
     box-shadow: 0px 2.345px 8.207px 0px rgba(0, 0, 0, 0.09);
 }
 .right-content, .left-content{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 7rem;
@@ -159,7 +159,6 @@ body, html {
     margin: -8rem -21rem;
 }
 #yellow-circle{
-    display: flex;
     width: 2.19825rem;
     height: 2.19825rem;
     border-radius: 3.66381rem;
@@ -170,8 +169,8 @@ body, html {
     margin: 0.4rem 0 0 0.8rem;
 }
 #infos, #infos-kal{
-    display: flex;
     flex-direction: column;
+    font-family:"Poppins", sans-serif;
     gap: 0.75rem;
 }
 #trainer, #top-left{
@@ -180,7 +179,6 @@ body, html {
     align-items: center;
 }
 #trainer{
-    display: flex;
     width: 6.8rem;
     height: 5.75rem;
     border-radius: 5.862px;
@@ -189,7 +187,6 @@ body, html {
     margin-left: -4rem;
 }
 #text-trainer, #infos-num{
-    display: flex;
     color: #262524;
     font-size: 0.58619rem;
     font-weight: 700;
@@ -198,7 +195,6 @@ body, html {
     margin: -2rem 0 0 3.5rem;
 }
 #infos-subtext{
-    display: flex;
     margin-left: 3.5rem;
 }
 #subtext-trainer, #infos-subtext, #infos-subtext-men2{
@@ -208,7 +204,6 @@ body, html {
     margin-top: -0.4rem;
 }
 .circle-trainer{
-    display: flex;
     margin-top: 0.5rem;
     background-color: #D388FF;
     border-radius: 2.41813rem;
@@ -220,13 +215,11 @@ body, html {
     margin-left: -20.5rem;
 }
 .content{
-    display: flex;
     margin: 5rem 0 0 1.2rem;
     flex-direction: column;
     gap: 2rem;
 }
 .subtextLong{
-    display: flex;
     margin-right: 1.5rem;
 }
 .exercices{
@@ -241,14 +234,12 @@ body, html {
     justify-content: space-between;
 }
 .container-exercices{
-    display: flex;
     flex-direction: row;
     gap: 0.3rem;
     margin-top: 1rem;
     margin-bottom: -1rem;
 }
 #layout-container-exercices{
-    display: flex;
     width: 5rem;
     height: 5rem;
     border-radius: 1.25rem;
@@ -274,7 +265,6 @@ body, html {
     opacity: 0.5;
 }
 .text-style{
-    display:flex;
     flex-direction: column;
 }
 #arrow-container-exercices1{
@@ -303,7 +293,6 @@ body, html {
 
 }
 #circle-blue-dark, #circle-blue-light, #circle-pink{
-    display: flex;
     width: 2.16819rem;
     height: 2.16819rem;
     align-items: center;
@@ -316,7 +305,6 @@ body, html {
     margin-left: 0.7rem;
 }
 #box-left-men2{
-    display: flex;
     width: 7.33581rem;
     height: 2.89094rem;
     border-radius: 0.36138rem;
@@ -351,4 +339,3 @@ body, html {
     background: #FFF;
     box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30);     
 }
-/*360
