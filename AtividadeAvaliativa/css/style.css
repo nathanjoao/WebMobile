@@ -329,7 +329,7 @@ body, html {
 }
 .contaier-woman{
     display: flex;
-    margin: 5.5rem 0 0 3.5rem;
+    margin: 5.5rem 0 0 3rem;
 }
 #box-left-woman{
     display: flex;
@@ -337,5 +337,32 @@ body, html {
     height: 3.34713rem;    
     border-radius: 0.41838rem;
     background: #FFF;
-    box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30);     
+    box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30); 
+    margin: 1rem 0 0 -20rem; 
+    align-items: center;
+}
+#infos-woman{
+    margin-left: 4rem;
+}
+#title-womanBox{
+    color: #262524;
+    font-size: 0.66944rem;
+    font-style: normal;
+    font-weight: 700;
+}
+#subtext-womanBox{
+    color: #262524;
+    font-size: 0.50206rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+#circleBlue-woman{
+    display: flex;
+    width: 2.51031rem;
+    height: 2.51031rem;
+    background: linear-gradient(50deg, #5478EF 15.91%, #D6DFFF 92.82%);
+    filter: drop-shadow(0px 11.564px 46.255px rgba(51, 78, 123, 0.30));
+    align-items: center;
+    border-radius: 3.66381rem;
+    justify-content: center;
 }
