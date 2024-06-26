@@ -369,5 +369,39 @@ body, html {
 }
 .content-description{
     display: flex;
-    margin: 0 0 0 1.2rem;
+    margin: 5rem 0 0 1.2rem;
+    flex-direction: column;
+}
+.container-boxes{
+    display: flex;
+    margin: -0.5rem 0 0 0;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.box-contentDescription{
+    display: flex;
+    padding: 1.9375rem 2.1875rem;
+    align-items: center;
+    gap: 0.625rem;
+    color: #262524;
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
+    width: 55%;
+    height: 5rem;
+    justify-content: center;
+}
+.text-contentDescription, .text-contentDescription2{
+    color: #262524;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.01125rem;
+}
+.text-contentDescription2{
+    opacity: 0.5;
+}
+#imgGroup{
+    width: 15rem;
 }
