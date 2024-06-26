@@ -54,9 +54,9 @@ body, html {
     margin-left: 1.2rem;
     flex-direction: column;
 }
-.title, .title-workout, .title-morningWorkout{
+.title, .title-workout, .title-morningWorkout, .titleDescription{
     color: #262524;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 .divTitle{
@@ -338,7 +338,7 @@ body, html {
     border-radius: 0.41838rem;
     background: #FFF;
     box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30); 
-    margin: 1rem 0 0 -20rem; 
+    margin: 1.5rem 0 0 -20rem; 
     align-items: center;
 }
 #infos-woman{
@@ -365,4 +365,9 @@ body, html {
     align-items: center;
     border-radius: 3.66381rem;
     justify-content: center;
+    margin: 4.5rem 0 0 10rem;
+}
+.content-description{
+    display: flex;
+    margin: 0 0 0 1.2rem;
 }
