@@ -471,11 +471,12 @@ body, html {
 .box-program1{
     margin-top: 1.7rem;
 }
+.box-program2{
+    margin-top: 3.5rem;
+}
 .content-program{
-    display: flex;
     flex-direction: column;
     margin: -0.5rem 0 0 1.5rem;
-    gap: ;
 }
 #text-program{
     color: #262524;
@@ -485,4 +486,26 @@ body, html {
     color: #262524;
     font-size: 0.875rem;
     opacity: 0.5;
+}
+.testimonials{
+    display: flex;
+    margin: 5rem 1.2rem 0 1.2rem;
+}
+.testimonials-box{
+    width: 100%;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.testimonials-subox{
+    width: 85%;
+    height: 70%;
+    justify-self: center;
+    display: flex;
+}
+.testimonials-text{
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin: 0 0 3rem 0;
 }
