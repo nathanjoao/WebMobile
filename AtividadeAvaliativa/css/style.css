@@ -233,9 +233,15 @@
     background: linear-gradient(87deg, #6462F0 0%, #9190E9 95.5%);
     width: 70%;
     height: 25.75rem;
-    flex-direction: column;
     margin: 5rem 1.2rem 0 1.8rem;
-    justify-content: space-between;
+    align-items: center;
+}
+.content-exercices{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 .container-exercices{
     flex-direction: row;
@@ -569,11 +575,38 @@
     width: 100%;
     height: 50.25rem;
 }
-#header-footer{
+.firstGroup-footer{
     width: 100%;
-
+    display: flex;
+    height: 6.5rem;
+    flex-direction: column;
+    gap: 2rem;
 }
-.logo-footer{
+#logo-footer{
     background-color: #FFFFFF;
     color:#6765F0;
+    border-radius: 0.625rem;
+    width: 4.1875rem;
+    height: 2.375rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+#logoContinuous-footer{
+    font-size: 1.25rem;
+    color: #FFF;
+}
+#logo{
+    margin: 2.19rem 0 0 1.81rem;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+#aboutUs{
+    color: #FFF;
+    font-size: 1.125rem;
+    opacity: 0.6;
+    margin-left: 1.81rem;
 }
