@@ -70,8 +70,8 @@
     margin: 1.5rem 1rem 0 0;
 }
 .divTitle{
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    
 }
 .subtext, .subtextLong, .subtext-morningWorkout{
     color: #262524;
@@ -86,8 +86,8 @@
 }
 .aboutSite{
     flex-direction: row;
-    justify-content: space-around;
-    margin: 1.3rem 0 0 -1.3rem;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
 }
 .startSite1, #learnMore, .startSite2, .startSite3{
     border-radius: 7.143px;
@@ -106,6 +106,7 @@
     height: 2.5rem;
     background-color: #FFF;
     color:#264373;
+    box-shadow: 0px 11.348px 45.391px 0px rgba(51, 78, 123, 0.30);
 }
 .brands{
     flex-direction: column;
@@ -114,14 +115,14 @@
 #brands{
     color: #262524;
     font-size: 0.75rem;
-    margin: 2.5rem 0 0 0.9rem;
+    margin: 2.5rem 0 0 0rem;
 }
 .brandsLogos{
     flex-direction: row;
-    margin:0 1rem 0 1rem;
+    margin:0 1rem 0 0rem;
     align-items: center;
     gap: 0.6rem;
-    justify-content: center;
+    display: flex;
 }
 #logoNike{
     width: 3.5rem;
@@ -133,7 +134,6 @@
 #pumaLogo{
     width: 6rem;
     height: 4rem;
-    margin-bottom: 0.4rem;
 }
 #rebookLogo{
     width: 7rem;
@@ -679,6 +679,7 @@
         flex-direction: row;
         display: flex;
         align-items: center;
+        margin-top: 8rem;
     }
     .image-container-men{
         margin: 0 auto;
@@ -691,11 +692,32 @@
         align-items: center;
         margin-left: -0.8rem;
         justify-content: center;
-
     }
     .exercices{
         display: flex;
         height: 17.125rem;
         margin: 0 auto; 
     }
+    .introduction-site{
+        margin-left: 3.5rem;
+    }
+    .title{
+        font-size: 3.5rem;
+        margin-right: 25rem;
+    }
+    .subtext{
+        margin-right: 41rem;
+        font-size: 1rem;
+    }
+    .brandsLogos{
+      gap: 2.5rem;
+    }
+    #brands{
+        font-size: 1rem;
+    }
+    .startSite1, .startSite2, .startSite3{
+        width: 15.375rem;
+    height: 3.5rem;
+    }
+
 }
