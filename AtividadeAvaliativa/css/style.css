@@ -674,11 +674,14 @@
     opacity: 0.5;
     line-height: 2rem; 
 }
-@media (min-width: 981px) {
+@media (min-width: 991px) {
     .main{
         flex-direction: row;
+        display: flex;
+        align-items: center;
     }
     .image-container-men{
-        margin-top: -1rem;
+        margin: 0 auto;
     }
+    
 }
