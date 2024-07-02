@@ -683,5 +683,12 @@
     .image-container-men{
         margin: 0 auto;
     }
-    
+    .content-exercices{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        margin-left: -0.8rem;
+    }
 }
