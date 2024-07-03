@@ -616,6 +616,8 @@
 .footer{
     background-color: #1C3764;
     width: 100%;
+    flex-direction: column;
+    display: flex;
 }
 .firstGroup-footer{
     display: flex;
@@ -732,11 +734,58 @@
         width: 1.5rem;
         height: 1.5rem;   
     }
-    .title, .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials{
+    .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials{
+        font-size: 2.875rem;
+        font-weight: 400;
+    }
+    .title{
         font-size: 2.875rem;
     }
     .men1{
         width: 22.375rem;
         height: 36.25rem;
     }
+    .program{
+        align-items: center;
+    }
+    .boxes-program{
+        flex-direction: column;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .box-program1, .box-program2{
+        flex-direction: row;
+    }
+    #circleProgramDblue, #circleProgramblue, #circleProgramPink{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 6.25rem;
+    }
+    .titleDesc2{
+        margin: 8rem 0 0 0;
+        justify-content: center;
+        display: flex;
+    }
+    .subtext-program{
+        font-size: 1rem;
+    }
+    .footer{
+        flex-direction: row;
+        gap: 15rem;
+        align-items: center;
+        height: 28rem;
+    }
+    .secondGroup-footer{
+        flex-direction: row;
+        gap: 9rem;
+    }
+    .firstGroup-footer{
+        margin-left: 6rem;
+        width: 22rem;
+    }
+    #links-lastContent{
+        font-size: 1.125rem;
+    }
+    
 }
+
