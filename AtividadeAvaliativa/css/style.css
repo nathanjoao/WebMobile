@@ -67,11 +67,10 @@
     font-size: 1.75rem;
 }
 .title{
-    margin: 1.5rem 1rem 0 0;
+    margin: 1.5rem 0 0 0;
 }
 .divTitle{
     flex-direction: column;
-    
 }
 .subtext, .subtextLong, .subtext-morningWorkout{
     color: #262524;
@@ -82,7 +81,7 @@
     margin: -3.3rem 4rem 0rem 0;
 }
 .subtext{
-    margin: 0.8rem 4.5rem 0 0;
+    margin: 0.8rem 0 0 0;
 }
 .aboutSite{
     flex-direction: row;
@@ -146,6 +145,9 @@
 }
 .image-container-men{
     margin: 3.2rem 5rem 0rem 8rem;
+}
+.image-container-men img{
+ 
 }
 #circle, #bottom-left{
     height: 2.19825rem;
@@ -562,6 +564,7 @@
     background: #FFF;
     box-shadow: 0px 10.23px 40.921px 0px rgba(51, 78, 123, 0.10);
 }
+
 .testimonials-subox{
     width: 85%;
     height: 75%;
@@ -674,15 +677,12 @@
     opacity: 0.5;
     line-height: 2rem; 
 }
-@media (min-width: 991px) {
+@media (min-width: 1440px) {
     .main{
         flex-direction: row;
         display: flex;
         align-items: center;
-        margin-top: 8rem;
-    }
-    .image-container-men{
-        margin: 0 auto;
+        margin-top: 6rem;
     }
     .content-exercices{
         display: flex;
@@ -695,18 +695,21 @@
     }
     .exercices{
         display: flex;
-        height: 17.125rem;
+        height: 12.125rem;
         margin: 0 auto; 
     }
     .introduction-site{
         margin-left: 3.5rem;
     }
+    .divTitle{
+        flex-direction: column;
+        width: 100%;
+    }
     .title{
         font-size: 3.5rem;
-        margin-right: 25rem;
+        margin-right: 15rem;
     }
     .subtext{
-        margin-right: 41rem;
         font-size: 1rem;
     }
     .brandsLogos{
@@ -717,7 +720,23 @@
     }
     .startSite1, .startSite2, .startSite3{
         width: 15.375rem;
-    height: 3.5rem;
+        height: 3.5rem;
+        font-size: 0.8rem;
     }
-
+    #learnMore{
+        width: 10.875rem;
+        height: 3.5rem;
+        font-size: 0.8rem;    
+    }
+    .arrowCircle{
+        width: 1.5rem;
+        height: 1.5rem;   
+    }
+    .title, .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials{
+        font-size: 2.875rem;
+    }
+    .men1{
+        width: 22.375rem;
+        height: 36.25rem;
+    }
 }
