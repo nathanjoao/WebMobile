@@ -687,16 +687,17 @@
     .main{
         flex-direction: row;
         display: flex;
-
         flex-direction: column;
         display: flex;
         gap: 1.5rem;
-        
     }
-    .box-program1, .box-program2{
+    .container-program1, .container-program2{
         flex-direction: row;
     }
-    .subtext-program{
+    .boxes-program{
+        margin: 0 auto;
+    }
+    #subTextBox-program{
         font-size: 1rem;
     }
     .testimonials-box{
@@ -705,23 +706,23 @@
     }
     .footer{
         flex-direction: row;
-        gap: 15rem;
+        gap: 3rem;
         align-items: center;
         height: 28rem;
     }
     .secondGroup-footer{
         flex-direction: row;
-        gap: 9rem;
+        gap: 5rem;
     }
     .firstGroup-footer{
-        margin-left: 6rem;
+        margin-left: 2rem;
         width: 22rem;
     }
     #links-lastContent{
         font-size: 1.125rem;
     }
     .testimonials-content{
-        flex-direction: row;
+       
     }
     .testimonials-box{
         width: 35.8125rem;
