@@ -497,8 +497,8 @@
 }
 .boxes-program{
     display: flex;
-    margin: 0 0 0 1.5rem;
     flex-direction: column;
+    margin-right: 1.5rem;
     gap: 2.5rem;
 }
 .box-program{
@@ -726,6 +726,16 @@
         width: 35.8125rem;
         height: 20.1875rem;
     }
+    .testimonials-content{
+        margin-top: 2.12rem;
+    }
+    #testimonials-person{
+        width: 4.3125rem;
+        height: 4.3125rem;
+    }
+    .testimonials-text, #testimonials-personName, #person-carrer{
+        font-size: 1rem;
+    }
     .footer{
         flex-direction: row;
         gap: 3rem;
@@ -743,13 +753,6 @@
     #links-lastContent{
         font-size: 1.125rem;
     }
-    .testimonials-content{
-       
-    }
-    .testimonials-box{
-        width: 35.8125rem;
-        height: 20.1875rem;
-    }
     
 }
 @media (min-width: 1440px){
@@ -757,4 +760,10 @@
         display: flex;
         gap: 10rem;
     }
+    .testimonials-content{
+        flex-direction: row;
+        gap: 3.75rem;
+        margin-top: 3.12rem;
+    }
+    
  }
