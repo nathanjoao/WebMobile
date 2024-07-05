@@ -735,7 +735,7 @@
     }
     .testimonials-text, #testimonials-personName, #person-carrer{
         font-size: 1rem;
-    }
+    }   
     .footer{
         flex-direction: row;
         gap: 3rem;
