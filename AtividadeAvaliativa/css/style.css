@@ -733,6 +733,10 @@
         width: 4.3125rem;
         height: 4.3125rem;
     }
+    .imgPerson-testimonials{
+        height: 69px;
+        width: 69px;
+    }
     .testimonials-text, #testimonials-personName, #person-carrer{
         font-size: 1rem;
     }   
@@ -764,6 +768,8 @@
         flex-direction: row;
         gap: 3.75rem;
         margin-top: 3.12rem;
+    } 
+    .footer{
+        gap: 20rem;
     }
-    
- }
+}
