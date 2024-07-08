@@ -441,7 +441,7 @@
 }
 .content-group{
     display: flex;
-    margin-left: 4.5rem;
+    margin-left: 3rem;
 }
 #boxLeftBottom-group{
     display: flex;
@@ -822,6 +822,26 @@
     }
     #introduction-morningWorkout p{
         margin-right: 17rem;
+    }
+    #imgGroup{
+        width: 25.9375rem;
+        height: 25.5rem;
+    }
+    .content-description{
+        flex-direction: row;
+        display: flex;
+        gap: 22rem;
+        justify-content: center;
+    }
+    .container-boxes{
+        gap: 1rem;
+    }
+    .box-contentDescription{
+        width: 35.375rem;
+        height: 1.5rem;
+    }
+    .content-group{
+        order: -1;
     }
     #icon {
         width: 3.125rem;
