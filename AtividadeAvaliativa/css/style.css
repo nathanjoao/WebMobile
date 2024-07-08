@@ -663,7 +663,7 @@
     display: flex;
     flex-direction: column;
 }
-.lastContent {
+.lastContent, .lastContentBlog, .lastContentAboutUS {
     display: flex;
     gap: 0.8rem;
     flex-direction: column;
@@ -748,7 +748,16 @@
     }
     #links-lastContent{
         font-size: 1.125rem;
-    }  
+    } 
+    .lastContent{
+        order: -1;
+    } 
+    .lastContentBlog{
+        order: -1;
+    }
+    .lastContentAboutUs{
+        order: 3;
+    }
 }
 @media (min-width: 1440px){
     .main{
@@ -803,6 +812,21 @@
         order: -1;
         margin-left: 9rem;
     }
+    #icon {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+    .text-container-exercices{
+        font-size: 1.25rem;
+    }
+    #layout-container-exercices{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    .container-program1, .container-program2{
+        display: flex;
+        gap: 10rem;
+    }
     #men-content-men2{
         width: 26rem;
         height: 31rem;  
@@ -843,20 +867,20 @@
     .content-group{
         order: -1;
     }
-    #icon {
-        width: 3.125rem;
-        height: 3.125rem;
-    }
-    .text-container-exercices{
-        font-size: 1.25rem;
-    }
-    #layout-container-exercices{
-        width: 6.25rem;
-        height: 6.25rem;
-    }
-    .container-program1, .container-program2{
+    .title-program{
+        width: 34rem;
+        text-align: center;
         display: flex;
-        gap: 10rem;
+    }
+    .box-program img{
+        width: 3.125rem;
+        height: 3.125rem;   
+    }
+    #titleBox-program{
+        margin-right: -4rem ;
+    }
+    #subTextBox-program{
+        margin-right: -4rem ;
     }
     .testimonials-content{
         flex-direction: row;
@@ -864,6 +888,14 @@
         margin-top: 3.12rem;
     } 
     .footer{
-        gap: 20rem;
+        gap: 15rem;
     }
+    .firstGroup-footer{
+        margin-left: 7.38rem;
+    }
+    .secondGroup-footer{
+        gap: 11.44rem;
+        margin-right: 11.75rem;
+    }
+    
 }
