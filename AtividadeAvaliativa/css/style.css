@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
 }
-.title, .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials, .title-program{
+.title, .title2, .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials, .title-program{
     color: #262524;
     font-size: 1.75rem;
 }
@@ -350,9 +350,6 @@
 }
 .startSite3{
     margin: 1rem 0 0 1.2rem;
-}
-.startSite2{
-
 }
 .title-workout{
     margin: 2rem 5rem 0 0;
@@ -690,9 +687,6 @@
         display: flex;
         gap: 1.5rem;
     }
-    .title{
-        font-weight: 400;
-    }
     .content{
         flex-direction: row;
         gap: 5rem;
@@ -708,8 +702,6 @@
         flex-direction: row; 
         margin: 0 auto;
         display: flex;
-    }
-    .program{
     }
     .container-program1, .container-program2{
         flex-direction: row;
@@ -756,10 +748,66 @@
     }
     #links-lastContent{
         font-size: 1.125rem;
-    }
-    
+    }  
 }
 @media (min-width: 1440px){
+    .main{
+        flex-direction: row;
+        gap: 20rem;
+    }
+    .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials, .title-program, .title2{
+        font-weight: 400;
+        font-size: 2.875rem;
+    }  
+    .introduction-site{
+        margin-left: 5.06rem;
+    } 
+    .title{
+        font-size: 3.5rem;
+    }
+    .content{
+        gap: 26rem;
+        flex-direction: row;
+        margin: 9rem 0 0 0;
+    }
+    .title2{
+        margin: 0 -17rem 0 0;
+    }
+    .divTitle2{
+        margin-left: 6.5rem;
+    }
+    .subtextLong{
+        margin-right:  5rem ;
+    }
+    .subtext, .subtextLong{
+        font-size: 1rem;
+    }
+    .exercices{
+        width: 77.25rem;
+        height: 17.125rem;
+        margin: 0 auto;
+        border-radius: 1.875rem;
+        margin-top: 7.5rem;
+    }
+    .content-exercices{
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .content-men2{
+        justify-content: flex-start;
+    }
+    #icon {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+    .text-container-exercices{
+        font-size: 1.25rem;
+    }
+    #layout-container-exercices{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
     .container-program1, .container-program2{
         display: flex;
         gap: 10rem;
