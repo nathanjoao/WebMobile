@@ -225,7 +225,7 @@
     margin-bottom: -6rem;
     margin-left: -20.5rem;
 }
-.content{
+.content, .content2{
     margin: 5rem 0 0 1.2rem;
     flex-direction: column;
     gap: 2rem;
@@ -779,7 +779,7 @@
     .subtextLong{
         margin-right:  5rem ;
     }
-    .subtext, .subtextLong{
+    .subtext, .subtextLong, .subtext-morningWorkout{
         font-size: 1rem;
     }
     .exercices{
@@ -794,8 +794,34 @@
         justify-content: center;
         gap: 8rem;
     }
+    .content2{
+        flex-direction: row;
+        display: flex;
+        gap: 10rem;
+    }
     .content-men2{
-        justify-content: flex-start;
+        order: -1;
+        margin-left: 9rem;
+    }
+    #men-content-men2{
+        width: 26rem;
+        height: 31rem;  
+    }
+    .morning-workout{
+        flex-direction: row;
+        display: flex;
+        gap: 5rem;
+    }
+    .container-woman{
+        margin-right: 10rem;
+    }
+    #introduction-morningWorkout{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #introduction-morningWorkout p{
+        margin-right: 17rem;
     }
     #icon {
         width: 3.125rem;
