@@ -679,6 +679,9 @@
     opacity: 0.5;
     line-height: 2rem; 
 }
+#headerDesktop{
+    display: none;
+}
 @media (min-width: 991px) {
     .main{
         flex-direction: row;
@@ -763,6 +766,7 @@
     .main{
         flex-direction: row;
         gap: 20rem;
+        margin-top: 10rem;
     }
     .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials, .title-program, .title2{
         font-weight: 400;
@@ -896,6 +900,60 @@
     .secondGroup-footer{
         gap: 11.44rem;
         margin-right: 11.75rem;
+    }
+    #header{
+        display: none;
+    }
+    #headerDesktop{
+        display: flex;
+        align-items: center;
+        gap: 38rem;
+        margin-top: 3rem;
+        justify-content: space-around;
+    }
+    #containerLogo-desk{
+        margin-left: 6.25rem;
+    }
+    #logoPurple-desk{
+        font-family: 'Sporting Grotesque', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        background-color: #6765F0;
+        border-radius: 10px;
+        padding: 0.3rem;
+        margin-left: 1rem;
+    }
+    #logoContinuous-desk{
+        color: #6765F0;
+        font-family: 'Sporting Grotesque', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #ul{
+        flex-direction: row;
+        display: flex;
+        gap: 2.44rem;
+        list-style-type: none;
+        align-items: center;
+        margin-right: 5rem;
+    }
+    #li{
+        font-size: 1rem;
+    }
+    #login{
+        border-radius: 0.625rem;    
+        background: #264373;
+        box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
+        width: 7.125rem;
+        height: 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    #hamb{
+        display: none;
     }
     
 }
