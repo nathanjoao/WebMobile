@@ -686,9 +686,9 @@
     .main{
         flex-direction: row;
         display: flex;
-        flex-direction: column;
         display: flex;
-        gap: 1.5rem;
+        gap: 3rem;
+        margin-top: 5rem;
     }
     .content{
         flex-direction: row;
@@ -760,6 +760,56 @@
     }
     .lastContentAboutUs{
         order: 3;
+    }
+    #header{
+        display: none;
+    }
+    #headerDesktop{
+        display: flex;
+        align-items: center;
+        gap: 17rem;
+        margin-top: 3rem;
+        justify-content: space-around;
+    }
+    #logoPurple-desk{
+        font-family: 'Sporting Grotesque', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        background-color: #6765F0;
+        border-radius: 10px;
+        padding: 0.3rem;
+        margin-left: 1rem;
+    }
+    #logoContinuous-desk{
+        color: #6765F0;
+        font-family: 'Sporting Grotesque', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #ul{
+        flex-direction: row;
+        display: flex;
+        gap: 2.44rem;
+        list-style-type: none;
+        align-items: center;
+    }
+    #li{
+        font-size: 1rem;
+    }
+    #login{
+        border-radius: 0.625rem;    
+        background: #264373;
+        box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
+        width: 7.125rem;
+        height: 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    #hamb{
+        display: none;
     }
 }
 @media (min-width: 1440px){
