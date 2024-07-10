@@ -146,9 +146,6 @@
 .image-container-men{
     margin: 3.2rem 5rem 0rem 8rem;
 }
-.image-container-men img{
- 
-}
 #circle, #bottom-left{
     height: 2.19825rem;
     width: 2.19825rem;
@@ -815,8 +812,27 @@
 @media (min-width: 1440px){
     .main{
         flex-direction: row;
-        gap: 20rem;
-        margin-top: 10rem;
+        gap: 10rem;
+        margin-top: 9rem;
+    }
+    .aboutSite img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .startSite1, .startSite2, .startSite3{
+        width: 15.375rem;
+        height: 3.5rem;
+        background-color: #264373;
+        color: #FFFFFF;
+        font-size: 1rem;
+    }
+    #learnMore{
+        width: 10.875rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+    #p-learnMore{
+        order: 1;
     }
     .title-workout, .title-morningWorkout, .titleDescription, .titleDesc2, .title-testimonials, .title-program, .title2{
         font-weight: 400;
@@ -861,6 +877,13 @@
         flex-direction: row;
         display: flex;
         gap: 10rem;
+    }
+    .image-container-men{
+        margin-top: -2rem;
+    }
+    .men1{
+        width: 22.375rem;
+        height: 36.25rem;
     }
     .content-men2{
         order: -1;
