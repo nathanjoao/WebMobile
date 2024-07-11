@@ -379,7 +379,7 @@
     display: flex;
     margin: 5.5rem 0 0 3rem;
 }
-#box-left-woman{
+#box-left-womanMobile{
     display: flex;
     width: 8.49331rem;
     height: 3.34713rem;    
@@ -388,6 +388,9 @@
     box-shadow: 0px 13.388px 53.554px 0px rgba(51, 78, 123, 0.30); 
     margin: 1.5rem 0 0 -20rem; 
     align-items: center;
+}
+#box-left-woman{
+    display: none;
 }
 #infos-woman{
     margin-left: 4rem;
@@ -890,7 +893,7 @@
         display: flex;
         gap: 10rem;
     }
-    #brands{
+    #brands,  #title-womanBox{
         font-size: 1rem;
     }
     .brandsLogos{
@@ -908,7 +911,7 @@
         order: -1;
         margin-left: 9rem;
     }
-    #circle, #bottom-left, #yellow-circle{
+    #circle, #bottom-left, #yellow-circle,  #circleBlue-woman, #circle-womanBox{
         width: 3.75rem;
         height: 3.75rem;
         border-radius: 6.25rem; 
@@ -977,7 +980,7 @@
     #text-trainer, #infos-num{
         font-size: 1rem;
     }
-    #subtext-trainer, #infos-subtext{
+    #subtext-trainer, #infos-subtext, #subtext-womanBox{
         font-size: 0.75rem;
     }
     #divText-trainer{
@@ -1009,15 +1012,56 @@
     .morning-workout{
         flex-direction: row;
         display: flex;
-        gap: 5rem;
+        justify-content: center;
+    }
+    #womanPhoto{
+        width: 26.9375rem;
+        height: 30.125rem;      
+    }
+    #circleBlue-woman{
+        margin: 0 auto;
     }
     .container-woman{
-        margin-right: 10rem;
+        margin-right: 5rem;
+    }
+    #box-left-womanMobile{
+        display: none;
+    }
+    #box-left-woman{
+        display: flex;
+        width: 12.6875rem;
+        height: 5rem;
+        width: 12.6875rem;
+        height: 5rem;
+        border-radius: 0.625rem;
+        background: #FFF;
+        box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
+        flex-direction: row;
+        align-items: center;
+    }
+    #infos-woman{
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #circle-womanBox{
+        border-radius: 6.25rem;
+        background: linear-gradient(50deg, #4BACE1 15.91%, #D8F1FF 92.82%);
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container-box-woman{
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
     #introduction-morningWorkout{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin: 0 0 0 5rem;
     }
     #introduction-morningWorkout p{
         margin-right: 17rem;
