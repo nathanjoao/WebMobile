@@ -1028,36 +1028,43 @@
         justify-content: space-around;
     }
     .title-morningWorkout{
-        margin-right: -20rem ;
+        width: 50% ;
     }
     #womanPhoto{
         width: 26.9375rem;
-        height: 30.125rem;      
+        height: 30.125rem; 
+        margin-left: 0 auto;     
     }
+    #containerLeft-woman {
+        margin: 2rem 0 0 -5rem;
+        gap: 8rem;
+        flex-direction: column;
+        display: flex;
+    }
+    .container-woman {
+        display: flex;
+        flex-direction: row-reverse;
+    } 
     #circleBlue-woman{
-        margin: 0 auto;
+        margin: 6rem -26rem 0 0rem;
     }
-    .container-woman{
-        margin-right: -15rem;
-    }   
     #box-left-womanMobile{
         display: none;
     }
-    #box-left-woman{
-        display: flex;
-        width: 12.6875rem;
-        height: 5rem;
-        width: 12.6875rem;
-        height: 5rem;
-        border-radius: 0.625rem;
-        background: #FFF;
-        box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
-        flex-direction: row;
-        align-items: center;
-        margin: 0 0 0 0;
+    #box-left-woman {
+    display: flex;
+    width: 12.6875rem;
+    height: 5rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 20px 80px 0px rgba(51, 78, 123, 0.30);
+    flex-direction: row;
+    align-items: center;
+    margin: 0 -135px 0 0;
     }
     #infos-woman{
         gap: 0.5rem;
+        margin-left: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -1070,9 +1077,10 @@
         justify-content: center;
     }
     #container-box-woman{
-       display: flex;
-       align-items: center;
-       justify-content: center;
+        margin: 5% auto auto 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #introduction-morningWorkout{
         display: flex;
@@ -1080,9 +1088,7 @@
         gap: 2rem;
         margin: 0 0 0 0rem;
     }
-    #containerLeft-woman{
-        display: flex;
-    }
+
     #circlePink-woman{
         background: linear-gradient(35deg, #DD69C7 15.2%, #FFC0F3 87.25%);
         display: flex;
@@ -1091,12 +1097,11 @@
         width: 2.1875rem;
         height: 2.1875rem;
     }
-    #containerLeft-woman
     .title-morningWorkout{
         margin-right: 5rem;
     }
     .subtext-morningWorkout{
-        margin-right: 9.5rem;
+        width: 48%;
     }
     #imgGroup{
         width: 25.9375rem;
