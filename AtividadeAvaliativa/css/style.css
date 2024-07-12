@@ -899,6 +899,7 @@
         flex-direction: row;
         display: flex;
         gap: 10rem;
+        justify-content: space-around;
     }
     #brands,  #title-womanBox{
         font-size: 1rem;
@@ -1019,6 +1020,34 @@
         width: 26rem;
         height: 31rem;  
     }
+    .content-men2{
+
+    }
+    #containerKall-content{
+        width: 12.6875rem;
+        height: 5rem; 
+    }
+    #darkBlueCircle-content{
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    #darkBlueCircle-content img{
+
+    }
+    #pinkCircle00-content {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin: -31% 0 0 3rem ;
+    }
+    #blueCircle-content {
+        margin: -18rem 0 0 28rem;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    #pinkCircle-content img, #blueCircle-content img{
+        width: 2.1875rem;
+        height: 2.1875rem;
+    }
     .morning-workout{
         flex-direction: row;
         display: flex;
@@ -1101,7 +1130,7 @@
         margin-right: 5rem;
     }
     .subtext-morningWorkout{
-        width: 48%;
+        width: 49.5%;
     }
     #imgGroup{
         width: 25.9375rem;
