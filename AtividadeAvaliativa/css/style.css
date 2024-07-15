@@ -892,6 +892,7 @@
     }  
     .introduction-site{
         margin-left: 5.06rem;
+        flex-direction: column;
     } 
     .title{
         font-size: 3.5rem;
@@ -1167,7 +1168,6 @@
         gap: 2rem;
         margin: 0 0 0 0rem;
     }
-
     #circlePink-woman{
         background: linear-gradient(35deg, #DD69C7 15.2%, #FFC0F3 87.25%);
         display: flex;
@@ -1181,16 +1181,46 @@
     }
     #imgGroup{
         width: 25.9375rem;
-        height: 25.5rem;
+        height: 25.5rem;    
     }
-    .content-description{
+    #containerDescription{
         flex-direction: row;
         display: flex;
-        gap: 22rem;
-        justify-content: center;
+        gap: 30rem;
+    }
+    .content-description{
+        display: flex;
+        flex-direction: row;
+    }
+    #circle-blueDesc, #circle-blueDDesc, #circle-pinkDesc{
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    #circle-blueDDesc{
+        margin: -3.5rem 0 0 0rem;
+    }
+    #pinkcircle-margin{
+        margin-left: 5%;
+    }
+    #circle-blueDesc{
+        margin: -2rem 0 0 -28rem;
+    }
+    #circle-blueDesc img, #circle-blueDDesc img, #circle-pinkDesc img, #boxLeftBottom-group img{
+        width: 2.1875rem;
+        height: 2.1875rem;
     }
     .container-boxes{
         gap: 1rem;
+    }
+    #boxLeftBottom-group{
+        width: 13.5rem;
+        height: 3.25rem;
+        gap: 1rem;
+        margin: 20rem 0 0 -32rem;
+    }
+    #boxLeftBottom-group p{
+       font-size: 1rem;
+       order: 1;
     }
     .box-contentDescription{
         width: 35.375rem;
@@ -1198,6 +1228,8 @@
     }
     .content-group{
         order: -1;
+        margin-left: 10rem;
+        display: flex;
     }
     .title-program{
         width: 34rem;
