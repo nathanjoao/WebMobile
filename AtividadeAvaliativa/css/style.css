@@ -304,8 +304,9 @@
     background: linear-gradient(87deg, #6462F0 0%, #9190E9 95.5%);
     width: 70%;
     height: 25.75rem;
-    margin: 5rem 1.2rem 0 1.8rem;
+    margin: 5rem 0rem 0 1.8rem;
     align-items: center;
+    justify-content: center;
 }
 .content-exercices{
     display: flex;
@@ -1191,6 +1192,7 @@
     .content-description{
         display: flex;
         flex-direction: row;
+       justify-content: center;
     }
     #circle-blueDesc, #circle-blueDDesc, #circle-pinkDesc{
         height: 3.75rem;
