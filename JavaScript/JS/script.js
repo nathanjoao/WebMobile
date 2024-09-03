@@ -5,7 +5,7 @@ const b = 2;
 console.log(a + b);
 console.log(a - b);
 console.log(a * b
-    );
+);
 console.log(a / b);
 
 // 2
@@ -33,7 +33,7 @@ alert(`Sua idade ${y}`);
 
 let mes = Number(prompt("Digite um número por extenso "));
 
-switch(mes){
+switch (mes) {
     case 1:
         alert("JANEIRO");
         break;
@@ -49,7 +49,7 @@ switch(mes){
     case 4:
         alert("Abril");
         break;
-    
+
     case 5:
         alert("Maio");
         break;
@@ -70,7 +70,7 @@ switch(mes){
         alert("Setembro");
         break;
 
-    case 10: 
+    case 10:
         alert("Outubro");
         break;
 
