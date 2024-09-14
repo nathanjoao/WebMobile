@@ -225,39 +225,52 @@ let conta = {
     saldo: 1000,
     titular: "Nathan",
     depositar: function(valor){
-        saldo += valor;
+        this.saldo += valor;
     },
     sacar: function(valor){
-        saldo -= valor;
+        this.saldo -= valor;
     },
     verSaldo: function(){
         alert(`Saldo atual: ${this.saldo}`);
     }
-}
+};
 
-x = parseInt(prompt("Digite sue escolha: ", "\n1- Depositar ", "\n2- Sacar", "\n3- Ver saldo "));
+let x = parseInt(prompt("Digite a sua opção: \n1- Depositar \n2- Sacar \n3- Ver saldo"));
 
 switch(x){
-
     case 1:
-        let add = parseFloat(prompt("Digite o valor a se adicionar: "));
+        let add = parseFloat(prompt("Digite um valor para adicionar à conta"));
         conta.depositar(add);
         conta.verSaldo();
-    break;
+        break;
 
-    case 2:
-        let sub = parseFloat(prompt("Digite o valor a ser sacado: "));
+    case 2: 
+        let sub = parseFloat(prompt(`Digite um valor para sacar da sua conta com este saldo: ${conta.saldo}`));
         conta.sacar(sub);
         conta.verSaldo();
-    break;
+        break;
 
     case 3:
         conta.verSaldo();
-    break;
-
+        break;
+        
     default:
         alert("Opção inválida. Por favor, escolha 1, 2 ou 3.");
 }
+
+// QUESTÃO 15
+
+frutas = ["maça", "banana", "laranja"];
+console.log(frutas[1]);
+frutas.push("manga");
+// console.log(frutas);
+console.log(`Quantidade de elementos na array: ${frutas.length}`);
+frutas.forEach(element => {
+    console.log(element);
+});
+
+
+
 
 
 
