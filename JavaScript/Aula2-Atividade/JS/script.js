@@ -99,8 +99,6 @@
 //     console.log(`"${palavra}" não é um palíndromo.`);
 // }
 
-
-
 // // Questão 8
 
 // let numeros = [1, 2, 3, 4, 5];
@@ -139,6 +137,31 @@
 // const produto = (a, b) => a * b;
 // console.log(produto(5, 3));
 
+// // QUESTÃO 4
+// const x = Number(prompt("Digite um número "));
+
+// function ehPar(x){
+//     if (x % 2 === 0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// alert(ehPar(x));
+
+// // QUESTÃO 5
+
+// function calcularMedia(numeros){
+//     let soma = 0;
+
+//     for(i = 0; i< numeros.length; i++){
+//         soma += numeros[i];
+//     }
+//     return soma / numeros.length;
+// }
+// alert(calcularMedia([1, 2, 3, 4, 5]));
+
 // // QUESTÃO 6
 // const toUpperCase = str => str.toUpperCase();
 
@@ -147,6 +170,20 @@
 // const result = toUpperCase(userInput);
 
 // alert(`String em maiúsculas: ${result}`);
+
+// // QUESTÃO 7
+
+// function filtrarMaioresQue(numeros, limite) {
+//     let resultado = [];
+//     for (let i = 0; i < numeros.length; i++) {
+//         if (numeros[i] > limite) {
+//             resultado.push(numeros[i]);
+//         }
+//     }
+//     return resultado;
+// }
+
+// console.log(filtrarMaioresQue([1, 2, 3, 4, 5], 3));
 
 // // QUESTÃO 8
 // const contarOcorrencias = (array, valor) => array.filter(item => item === valor).length;
@@ -219,45 +256,78 @@
 
 // console.log(`Diferença em dias: ${calcularDiferencaEmDias(data1, data2)}`);
 
-// QUESTÃO 14
+// // QUESTÃO 14
 
-let conta = {
-    saldo: 1000,
-    titular: "Nathan",
-    depositar: function(valor){
-        saldo += valor;
-    },
-    sacar: function(valor){
-        saldo -= valor;
-    },
-    verSaldo: function(){
-        alert(`Saldo atual: ${this.saldo}`);
-    }
-}
+// let conta = {
+//     saldo: 1000,
+//     titular: "Nathan",
+//     depositar: function(valor){
+//         saldo += valor;
+//     },
+//     sacar: function(valor){
+//         saldo -= valor;
+//     },
+//     verSaldo: function(){
+//         alert(`Saldo atual: ${this.saldo}`);
+//     }
+// }
 
-x = parseInt(prompt("Digite sue escolha: ", "\n1- Depositar ", "\n2- Sacar", "\n3- Ver saldo "));
+// x = parseInt(prompt("Digite sue escolha: ", "\n1- Depositar ", "\n2- Sacar", "\n3- Ver saldo "));
 
-switch(x){
+// switch(x){
 
-    case 1:
-        let add = parseFloat(prompt("Digite o valor a se adicionar: "));
-        conta.depositar(add);
-        conta.verSaldo();
-    break;
+//     case 1:
+//         let add = parseFloat(prompt("Digite o valor a se adicionar: "));
+//         conta.depositar(add);
+//         conta.verSaldo();
+//     break;
 
-    case 2:
-        let sub = parseFloat(prompt("Digite o valor a ser sacado: "));
-        conta.sacar(sub);
-        conta.verSaldo();
-    break;
+//     case 2:
+//         let sub = parseFloat(prompt("Digite o valor a ser sacado: "));
+//         conta.sacar(sub);
+//         conta.verSaldo();
+//     break;
 
-    case 3:
-        conta.verSaldo();
-    break;
+//     case 3:
+//         conta.verSaldo();
+//     break;
 
-    default:
-        alert("Opção inválida. Por favor, escolha 1, 2 ou 3.");
-}
+//     default:
+//         alert("Opção inválida. Por favor, escolha 1, 2 ou 3.");
+// }
+
+// // QUESTÃO 15
+
+// frutas = ["maça", "banana", "laranja"];
+// alert(frutas[1]);
+
+// frutas.push("manga");
+
+// frutas.shift()
+// alert(frutas);
+// alert(frutas.length);  
+
+// for(i = 0; i < frutas.length; i++){
+//     fruta = frutas[i];
+//     console.log(fruta);
+// }
+
+// frutas.forEach(element => {
+//     console.log(element);
+// });
+
+// const tamanhos = frutas.map(fruta => fruta.length);
+// console.log(tamanhos);
+
+// const frutasLongas = frutas.filter(fruta => fruta.length > 5);
+
+// console.log(frutasLongas);
+
+// const numeros = [1, 2, 3, 4, 5];
+
+// const soma = numeros.reduce((acc, num) => acc + num, 0);
+
+// console.log(soma);
 
 
 
