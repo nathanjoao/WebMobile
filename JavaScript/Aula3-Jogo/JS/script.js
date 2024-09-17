@@ -7,11 +7,11 @@ function atualizarRanking(nomeJogador, tentativas) {
     
     ranking.push({ nome: nomeJogador, tentativas: tentativas });
     
-    ranking.sort((a, b) => a.tentativas - b.tentativas);
-    
-    if (ranking.length > 10) {
-        ranking.length = 10;
-    }
+        ranking.sort((a, b) => a.tentativas - b.tentativas);
+        
+        if (ranking.length > 10) {
+            ranking.length = 10;
+        }
 
     localStorage.setItem('ranking', JSON.stringify(ranking));
     
