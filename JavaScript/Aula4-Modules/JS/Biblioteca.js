@@ -1,9 +1,10 @@
 let biblioteca = [];
 let id1 = 1;
-const prompt = require('prompt-sync')();
+import promptSync from 'prompt-sync';
 
+const prompt = promptSync();
 
-//Listar 
+// Listar livros
 export function listarLivros() {
     if (biblioteca.length === 0) {
         console.log("\nNão há livros na biblioteca");
@@ -11,12 +12,12 @@ export function listarLivros() {
     } else {
         console.log("\nBiblioteca: ");
         biblioteca.forEach(livro => {
-            console.log(`ID: ${livro.id}\nTítulo: ${livro.titulo}\nAutor: ${livro.autor}\nAno de publicação: ${livro.anoPub}\nGênero: ${livro.genero}\nDisponibilidade: ${livro.disponibilidade}`);
+            console.log(`ID: ${livro.id}\nTítulo: ${livro.titulo}\nAutor: ${livro.autor}\nAno de publicação: ${livro.anoPub}\nGênero: ${livro.genero}\nDisponibilidade: ${livro.disponibilidade ? 'disponível' : 'emprestado'}`);
         });
     }
 }
 
-//Adicionar
+// Adicionar livros
 export function addLivros(titulo, autor, anoPub, genero) {
     const livroExistente = biblioteca.find(livro => livro.titulo.toLowerCase() === titulo.toLowerCase());
     if (!livroExistente) {
@@ -35,8 +36,7 @@ export function addLivros(titulo, autor, anoPub, genero) {
     }
 }
 
-
-//Alterar disponibilidade
+// Alterar disponibilidade
 export function alterarDisp(id) {
     const livro = biblioteca.find(l => l.id === id);
     if (livro) {
@@ -47,9 +47,7 @@ export function alterarDisp(id) {
     }
 }
 
-
-
-//Buscar pelo título     
+// Buscar pelo título
 export function buscarPeloTitulo(titulo) {
     const livro = biblioteca.find(l => l.titulo.toLowerCase() === titulo.toLowerCase());
     if (livro) {
@@ -59,7 +57,7 @@ export function buscarPeloTitulo(titulo) {
     }
 }
 
-//Remover livro
+// Remover livro
 export function removerLivro(id) {
     const livroExistente = biblioteca.find(l => l.id === id);
     if (livroExistente) {
@@ -70,7 +68,7 @@ export function removerLivro(id) {
     }
 }
 
-//Buscar por autor
+// Buscar por autor
 export function buscarPorAutor(autor) {
     const livros = biblioteca.filter(l => l.autor.toLowerCase() === autor.toLowerCase());
     if (livros.length > 0) {
@@ -83,8 +81,7 @@ export function buscarPorAutor(autor) {
     }
 }
 
-
-//Filtrar por gênero
+// Filtrar por gênero
 export function filtarPorGenero(genero) {
     const livrosComGenero = biblioteca.filter(l => l.genero.toLowerCase() === genero.toLowerCase());
     if (livrosComGenero.length > 0) {
@@ -98,7 +95,6 @@ export function filtarPorGenero(genero) {
 }
 
 // Listar apenas disponíveis
-// Listar apenas disponíveis
 export function apenasDisponiveis() {
     const livrosDisp = biblioteca.filter(l => l.disponibilidade);
     if (livrosDisp.length > 0) {
@@ -111,17 +107,37 @@ export function apenasDisponiveis() {
     }
 }
 
-//Adicionar livro peloPrompt
-export function addLivrosPrompt(titulo, autor, anoPub, genero) {
+// Adicionar livro pelo Prompt
+export function addLivrosPrompt() {
+    const titulo = prompt("Digite o título do livro ");
+    const autor = prompt("Digite o autor do livro ");
+    const anoPub = Number(prompt("Digite o ano de publicação do livro "));
+    const genero = prompt("Digite o gênero do livro ");
+
     const livroExistente = biblioteca.find(livro => livro.titulo.toLowerCase() === titulo.toLowerCase());
     if (!livroExistente) {
-        const novoLivro{
-            novoLivro.titulo = prompt("Digite o título do livro "),
-            novoLivro.autor = prompt("Digite o autor do livro"),
-            novoLivro.anoPub = prompt(Number("Digite o ano de publicação do livro")),
-            novoLivro.genero = prompt("Digite o gênero do livro ")
+        const novoLivro = {
+            id: id1++, // Incrementa o ID com um contador separado
+            titulo: titulo,
+            autor: autor,
+            anoPub: anoPub,
+            genero: genero,
+            disponibilidade: true // Considera novo livro como disponível
         };
+        biblioteca.push(novoLivro);
+        console.log("Livro adicionado com sucesso:", novoLivro);
+    } else {
+        console.log("O livro já existe na biblioteca.");
     }
-    biblioteca.push(livroExistente);
+}
 
+export function removeLivrosPrompt(id){
+    const idLivro = Number(prompt("Digite o ID do livro que você quer remover"));
+    const livroExistente = biblioteca.find(l => l.id === idLivro);
+    if (livroExistente) {
+        biblioteca = biblioteca.filter(l => l.id !== idLivro);
+        console.log(`\nLivro "${livroExistente.titulo}" removido com sucesso!`);
+    } else {
+        console.log(`\nLivro com o ID ${id} não encontrado.`);
+    }
 }

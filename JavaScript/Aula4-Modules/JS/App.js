@@ -1,4 +1,5 @@
-import { listarLivros, addLivros, alterarDisp, buscarPeloTitulo, removerLivro, buscarPorAutor, filtarPorGenero, apenasDisponiveis } from './Biblioteca.js';
+import { listarLivros, addLivros, alterarDisp, buscarPeloTitulo, removerLivro, buscarPorAutor, filtarPorGenero, apenasDisponiveis, addLivrosPrompt 
+, removeLivrosPrompt} from './biblioteca.js';
 
 // Adicionar livros à biblioteca
 addLivros("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, "Fantasia");
@@ -32,5 +33,10 @@ removerLivro(2);
 removerLivro(3);
 removerLivro(4);
 
+addLivrosPrompt();
+
 // Listar (não há nenhum livro)
 listarLivros();
+removeLivrosPrompt();
+listarLivros();
+
