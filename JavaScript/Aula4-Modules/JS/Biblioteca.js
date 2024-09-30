@@ -141,3 +141,23 @@ export function removeLivrosPrompt(id){
         console.log(`\nLivro com o ID ${id} não encontrado.`);
     }
 }
+
+// editar livros
+export function alterarIdLivro() {
+    const idAtual = Number(prompt("Digite o ID atual do livro que você quer alterar: "));
+    const livro = biblioteca.find(l => l.id === idAtual);
+
+    if (livro) {
+        const novoId = Number(prompt("Digite o novo ID para o livro: "));
+        const idJaExiste = biblioteca.find(l => l.id === novoId);
+
+        if (!idJaExiste) {
+            livro.id = novoId;
+            console.log(`\nID do livro "${livro.titulo}" alterado para ${novoId} com sucesso!`);
+        } else {
+            console.log(`\nID ${novoId} já está em uso. Por favor, escolha um ID diferente.`);
+        }
+    } else {
+        console.log(`\nLivro com o ID ${idAtual} não foi encontrado.`);
+    }
+}

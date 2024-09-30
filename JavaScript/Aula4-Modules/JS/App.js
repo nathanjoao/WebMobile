@@ -1,5 +1,5 @@
 import { listarLivros, addLivros, alterarDisp, buscarPeloTitulo, removerLivro, buscarPorAutor, filtarPorGenero, apenasDisponiveis, addLivrosPrompt 
-, removeLivrosPrompt} from './biblioteca.js';
+, removeLivrosPrompt, alterarIdLivro} from './biblioteca.js';
 
 // Adicionar livros à biblioteca
 addLivros("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, "Fantasia");
@@ -33,10 +33,20 @@ removerLivro(2);
 removerLivro(3);
 removerLivro(4);
 
+// Adicionar (como o usuário quiser)
 addLivrosPrompt();
-
-// Listar (não há nenhum livro)
+// Litar
 listarLivros();
+
+// Remover pelo id que o usuário digitar
 removeLivrosPrompt();
+
+// Listar o resultado
+listarLivros();
+
+// Alterar para o id que o usuário quiser
+alterarIdLivro();
+
+// Listar
 listarLivros();
 
