@@ -18,8 +18,8 @@
  */
 
 
-function somaMultiplos(x){
-    if(typeof x === 'number' && !isNaN(x) && x > 0){
+// function somaMultiplos(x){
+//     if(typeof x === 'number' && !isNaN(x) && x > 0){
         
-    }
-}
+//     }
+// }

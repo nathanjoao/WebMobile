@@ -14,4 +14,13 @@
  * console.log(resultado); // Deve imprimir: [1, 2, 3, 4, 5, 6]
  */
 
+function unirArrays(array1, array2) {
+    let combinedArray = [...array1, ...array2];
+    let uniqueArray = [...new Set(combinedArray)];
+    return uniqueArray;
+  }
+  
+//   console.log(unirArrays([1, 2, 3, 4], [3, 4, 5, 6]));
 
+module.exports = unirArrays;
+  

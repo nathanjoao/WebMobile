@@ -40,7 +40,7 @@
  */
 
 function analisaArray(array = []) {
-    if (!array.length || !array.every(Number.isInteger)) {
+    if (array.length === 0 || !array.every(Number.isInteger)) {
         return null;
     }
 

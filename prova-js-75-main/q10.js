@@ -26,10 +26,11 @@
  */
 
 function manipularArrayPalavras(arr = ["casa", "arvore", "carro", "aviao"]){
-    const arr2 = arr.map(word => word.toUpperCase());
+    const arr2 = arr.slice();
+    arr2.map(char => char.toUpperCase());
     arr2.unshift("INICIO");
     arr2.push("FIM");
-    
+    return arr2;
 }
 
-console.log(manipularArrayPalavras);
+console.log(manipularArrayPalavras());

@@ -21,8 +21,15 @@
  */
 
 function palavraMaisLonga(texto){
-    const list = texto.split(' ');
-    const list2 = texto.join(',').split(',');
+    if(isNaN(texto)){
+        texto.split(' ');
+        texto2 = texto.split(',');
+        texto3 = texto2.split('.');
+
+    }else{
+        return false
+    }
+
     return list2;
 }
 

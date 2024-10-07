@@ -30,6 +30,6 @@ function calculaIMC(peso, altura) {
         return null;
     }
 }
-   console.log(calculaIMC(-70, 1.75)); 
+// console.log(calculaIMC(-70, 1.75)); 
    
 module.exports = calculaIMC;

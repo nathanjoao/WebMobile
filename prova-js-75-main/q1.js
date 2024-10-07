@@ -19,17 +19,20 @@
  */
 
 function maiorNumero(x, y, z){
-    const array1 = [x,y,z];
-    array1.sort(a,b => b - a);
-    const num = array1[0];
-    if(typeof peso === 'number' && !isNaN(num) && num > 0){
-        return null; 
+    const array = [x,y,z];
+    if(array.Number.isInteger(y / x / z)){
+        if(x > y && x > z){
+            return x;
+        }else if( y > x && y > z){
+            return y;
+        }else if( z > x && z > y){
+            return z;
+        }
     }
     else{
-            return num;
+            return false;
         }
     }
 
-console.log(maiorNumero(1, 5, 3));
 
 module.exports = maiorNumero;

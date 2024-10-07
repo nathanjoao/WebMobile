@@ -21,17 +21,17 @@
 
 function contarVogais(str) {
     const vogais = 'aeiou'; 
-    const contagem = {}; 
+    const cont = {}; 
 
     str = str.toLowerCase();
 
     for (let char of str) {
         if (vogais.includes(char)) {
-            contagem[char] = (contagem[char] || 0) + 1;
+            cont[char] = (cont[char] || 0) + 1;
         }
     }
 
-    return contagem; 
+    return cont; 
 }
 // console.log(contarVogais(("Desenvolvimento Web e Mobile")));
 
