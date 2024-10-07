@@ -15,3 +15,19 @@
  * Ignore diferenças entre maiúsculas e minúsculas (case-insensitive).
  */
 
+function encontrarCaracteresDuplicados(str) {
+    const contador = {};
+    const duplicados = [];
+  
+    for (let char of str) {
+      contador[char] = (contador[char] || 0) + 1;
+    }
+
+    for (let char in contador) {
+      if (contador[char] > 1) {
+        duplicados.push(char);
+      }
+    }
+  
+    return duplicados;
+  }

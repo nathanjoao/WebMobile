@@ -23,6 +23,18 @@
  *  maiorNumero: maiorNumero,
  *   numerosPares: numerosPares,
  * };
- *
- *
  */
+
+function manipularArray(array = [1, 2, 3, 4, 5]){
+    let array2 = array.slice(); 
+
+    array2.shift();
+    array2.pop();
+    array2.push[10];
+
+    let sum = array2.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+    let max = Math.max(array2);
+
+    let array3 = array2.filter(num => num % 2 === 0);
+}

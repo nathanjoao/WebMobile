@@ -47,3 +47,12 @@
  * };
  */
 
+function manipulacaoArrayLinguagens(){
+    linguagens =  ["JavaScript", "Python", "Java"];
+    console.log(linguagens);
+    linguagens.push("C++", "Ruby");
+    console.log(linguagens) 
+    linguagens.shift();
+    console.log(linguagens);
+    
+}

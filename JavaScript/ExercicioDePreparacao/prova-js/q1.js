@@ -20,4 +20,3 @@ function somaNumeros(){
     return Number(a+b);
 }
 
-module.exports = somaNumeros;

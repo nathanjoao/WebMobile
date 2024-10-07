@@ -19,5 +19,31 @@
  *
  * Retorne o objeto livro completo ao final da função.
  */
+function manipulacaoObjeto(){
+    const livro = {
+        titulo: "O alquimista",
+        autor: "Paulo Coelho ",
+        anoPublicado: 1998,
+    
+        editora: "Rocco",
+    }
+        
+        console.log(livro.titulo);
+        
+        livro.anoPub = function(){
+            livro.anoPublicado === 1992;
+        },
+
+        livro.getIdade = function(){
+            const idade = 2024 - livro.anoPublicado;
+            return idade;
+        },
+    
+        livro.getDescricao = function(){
+            return `O livro ${livro.titulo} foi escrito por ${livro.autor} no ano de ${livro.anoPublicado}`;
+        }
+    
+    return livro;
+}
 
 

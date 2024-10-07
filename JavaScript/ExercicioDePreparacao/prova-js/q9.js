@@ -18,3 +18,26 @@
  * console.log(estudante.situacao());
  */
 
+function criarEstudante(){
+
+    const estudante = {
+        nome: "Nathan",
+        idade: 18,
+        nota1: 9,
+        nota2: 8,
+        nota3: 10,
+
+        media(nota1, nota2, nota3){
+            return (nota1 + nota2 + nota3) / 3;
+        },
+        situacao(media){
+            if(media >= 7){
+                console.log("Aprovado");
+            }else{
+                console.log("Reprovado");
+            }
+        }
+    }
+    return estudante;
+}
+

@@ -7,3 +7,8 @@
  * const resultado = elementosComuns([1, 2, 3, 4, 5. 10, 15, 16], [3, 4, 5, 6, 7, 15, 24]);
  * console.log(resultado); // Deve imprimir: [3, 4, 5, 15]
  */
+
+
+function elementosComuns(array1 = [1, 2, 3, 4, 5, 10, 15, 16], array2 = [3, 4, 5, 6, 7, 15, 24]){
+    return array1.filter(element => array2.includes(element));
+}
