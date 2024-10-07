@@ -33,4 +33,6 @@ function manipularArrayPalavras(arr = ["casa", "arvore", "carro", "aviao"]){
     return arr2;
 }
 
+module.exports = manipularArrayPalavras;
+
 console.log(manipularArrayPalavras());
