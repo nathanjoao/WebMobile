@@ -26,19 +26,31 @@ function manipulacaoCarro() {
         marca: "Toyota",
         modelo: "Corolla",
         anoFabricacao: 2010
-    };
+    }
+
     console.log(carro.modelo);
     carro.anoFabricacao = 2015;
     carro.cor = "Preto";
-    carro.getIdade = function() {
+
+    carro.getIdade = function () {
         const anoAtual = new Date().getFullYear();
-        return `Idade: ${anoAtual - this.anoFabricacao}`;
-    };
-    carro.getDescricao = function() {
-        return `O carro da marca ${this.marca}, modelo ${this.modelo}, foi fabricado em ${this.anoFabricacao} e é da cor ${this.cor}.`;
-    };
+        const idade = anoAtual - this.anoFabricacao;
+        return idade;
+    }
+
+    carro.getDescricao = function () {
+        return `O carro marca "${this.marca}", modelo "${this.modelo}", foi fabricado em ${this.anoFabricacao} e é da cor "${this.cor}".`
+    }
     return carro;
 }
+
 // console.log(manipulacaoCarro());
+const carro = manipulacaoCarro();
+
+const descricaoEsperada = `O carro marca "Toyota", modelo "Corolla", foi fabricado em 2015 e é da cor "Preto".`;
+console.log(
+    typeof carro.getDescricao === 'function'&&
+    carro.getDescricao() === descricaoEsperada
+)
 
 module.exports = manipulacaoCarro;

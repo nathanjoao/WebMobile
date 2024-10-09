@@ -40,28 +40,7 @@
  */
 
 function analisaArray(array = []) {
-    if (array.length === 0 || !array.every(Number.isInteger)) {
-        return null;
-    }
-
-    const resultado = {
-        quantP: 0,
-        numP: [],
-        quantI: 0,
-        numI: []
-    };
-
-    for (let num of array) {
-        if (num % 2 === 0) {
-            resultado.quantP++;
-            resultado.numP.push(num);
-        } else {
-            resultado.quantI++;
-            resultado.numI.push(num);
-        }
-    }
-
-    return resultado;
+    
 }
 
 // console.log(analisaArray([1, 2, 3, 4, 5]));

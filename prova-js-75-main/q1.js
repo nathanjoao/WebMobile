@@ -19,20 +19,8 @@
  */
 
 function maiorNumero(x, y, z){
-    const array = [x,y,z];
-    if(array.Number.isInteger(y / x / z)){
-        if(x > y && x > z){
-            return x;
-        }else if( y > x && y > z){
-            return y;
-        }else if( z > x && z > y){
-            return z;
-        }
-    }
-    else{
-            return false;
-        }
-    }
+    
+}
 
 
 module.exports = maiorNumero;

@@ -22,14 +22,11 @@
  */
 
 function calculaIMC(peso, altura) {
-    if (typeof peso === 'number' && !isNaN(peso) && peso > 0 && 
-        typeof altura === 'number' && !isNaN(altura) && altura > 0) {
-        let imc = peso / (altura * altura);
-        return imc;
-    } else {
-        return null;
-    }
+   if(peso > 0 && altura > 0 && typeof peso === "number" && typeof altura === "number"){
+    const imc = peso / (altura * altura);
+    return parseFloat(imc.toFixed(1));
+   }return null;
 }
-// console.log(calculaIMC(-70, 1.75)); 
+console.log(calculaIMC(-70, 1.75)); 
    
 module.exports = calculaIMC;

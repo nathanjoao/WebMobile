@@ -40,31 +40,7 @@
  */
 
 function controleDeCompras(arr) {
-    if (arr.length === 0 || !arr.every(item => typeof item.nome === 'string' && typeof item.quantidade === 'number' && 
-    typeof item.preco === 'number' && item.quantidade > 0 && item.preco > 0)) {
-        return null;
-    }
-
-    let totalGasto = 0;
-    let itemMaisCaro = { nome: '', precoTotal: 0 };
-    let listaItens = [];
-
-    arr.forEach(item => {
-        let precoTotalItem = item.quantidade * item.preco;
-        totalGasto += precoTotalItem;
-
-        if (precoTotalItem > itemMaisCaro.precoTotal) {
-            itemMaisCaro = { nome: item.nome, precoTotal: precoTotalItem };
-        }
-
-        listaItens.push(item.nome);
-    });
-
-    return {
-        totalGasto,
-        itemMaisCaro,
-        listaItens
-    };
+    
 }
 
 module.exports = controleDeCompras;
