@@ -39,10 +39,33 @@
  * analisaArray([2, 'a', 4]) deve retornar null
  */
 
-function analisaArray(array = []) {
+function analisaArray(array) {
+    if(!Array.isArray(array) || array.length === 0 || !array.every(Number.isInteger) ){
+        return null;
+    }
+    let numP = [];
+    let numI = [];
+    let quantP = [];
+    let quantI = [];
+
+    array.forEach(num => {
+        if(num % 2 === 0){
+            numP.push(num);
+            quantP++;
+        }else{
+            numI.push(num);
+            quantI++;
+        }
+    });
+    return {
+        quantP: quantP,
+        numP: numP,
+        numI: numI,
+        numP: numP,
+    };
     
 }
 
-// console.log(analisaArray([1, 2, 3, 4, 5]));
+// console.log(analisaArray([2, 'a', 4]));
 
 module.exports = analisaArray;
