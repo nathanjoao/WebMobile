@@ -19,8 +19,15 @@
  */
 
 function maiorNumero(x, y, z){
-    
+    if(typeof x == "string" || typeof y == "string" || typeof z == "string"){
+        return 3;
+    }else if(Number.isInteger(x, y, z)){
+        return Math.max(x,y,z);
+    }
+    else{
+        return null;
+    }
 }
-
+console.log(maiorNumero(1, 'a', 3));
 
 module.exports = maiorNumero;
