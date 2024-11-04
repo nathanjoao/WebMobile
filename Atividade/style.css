@@ -1,3 +1,36 @@
-.red{
-    color: red;
+body{
+    background-color: grey;
+}
+.container{
+    display: flex;
+    box-shadow: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+section div{
+    margin-top: 5rem;
+}
+section{
+    background-color: darkgray;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+.dropzone{
+    background-color: gainsboro;
+    border: 5px dashed #bbb;
+}
+section, .dropzone{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 23.5rem;
+}
+.draggable{
+    cursor: move;
+}
+.over{
+    background-color: white;
+    color: black;
 }
