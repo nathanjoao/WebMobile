@@ -16,6 +16,7 @@ imagens.forEach((imagens) => {
     imagens.style.width = '15rem';
 });
 
+java.style.height = '10rem';
 acai.style.height = '10rem';
 
 // Evento dragstart - inicia o arrasto do elemento
