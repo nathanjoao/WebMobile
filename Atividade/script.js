@@ -14,10 +14,13 @@ imagem.setAttribute('alt', 'Futebol');
 
 imagens.forEach((imagens) => {
     imagens.style.width = '15rem';
-});
+    imagens.style.borderRadius = '10px'
+    
+  });
 
 java.style.height = '10rem';
 acai.style.height = '10rem';
+imagem.style.height = '10rem';
 
 // Evento dragstart - inicia o arrasto do elemento
 draggable.addEventListener('dragstart', (event) => {

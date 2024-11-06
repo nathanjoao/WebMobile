@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: #b7d5e5;
 }
 .container{
     display: flex;
@@ -12,7 +12,7 @@ section div{
     margin-top: 5rem;
 }
 section{
-    background-color: darkgray;
+    background-color: #3065ac;
     gap: 1rem;
     width: 100%;
     align-items: center;
@@ -20,6 +20,7 @@ section{
 .dropzone{
     background-color: gainsboro;
     border: 5px dashed #bbb;
+    gap: 1rem;
 }
 section, .dropzone{
     display: flex;
@@ -33,4 +34,15 @@ section, .dropzone{
 .over{
     background-color: white;
     color: black;
+}
+.draggable img{
+    border: solid #363636;
+}
+
+.dropzone img{
+    border: solid #ecdf4f
+}
+
+img:hover{
+    
 }
