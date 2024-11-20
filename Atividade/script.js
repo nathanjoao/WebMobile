@@ -1,73 +1,75 @@
-const draggable = document.querySelector('.draggable');
 const dropzone = document.querySelector('.dropzone');
-const imagem = document.getElementById('futebol');
-const imagens = document.querySelectorAll('img');
-const acai = document.getElementById('acai');
-const section = document.getElementById('section');
+const originalContainer = document.querySelector('.original-container');
 const draggables = document.querySelectorAll('.draggable');
-const java = document.getElementById('java');
+const images = document.querySelectorAll('img');
 
-java.setAttribute('src', 'java.png');
-java.setAttribute('alt', 'Java');
-imagem.setAttribute('src', 'futebol.jpg');
-imagem.setAttribute('alt', 'Futebol');
+// Definindo atributos das imagens
+document.getElementById('java').setAttribute('src', 'java.png');
+document.getElementById('java').setAttribute('alt', 'Java');
+document.getElementById('futebol').setAttribute('src', 'futebol.jpg');
+document.getElementById('futebol').setAttribute('alt', 'Futebol');
 
-imagens.forEach((imagens) => {
-    imagens.style.width = '15rem';
-    imagens.style.borderRadius = '10px'
-    
-  });
+// Estilizando as imagens
+images.forEach((img) => {
+    img.style.width = '15rem';
+    img.style.borderRadius = '10px';
+    img.style.height = '10rem';
+});
 
-java.style.height = '10rem';
-acai.style.height = '10rem';
-imagem.style.height = '10rem';
-
-// Evento dragstart - inicia o arrasto do elemento
-draggable.addEventListener('dragstart', (event) => {
-    event.dataTransfer.setData('text/plain', event.target.id);
-    draggable.classList.add('dragging'); // Adiciona uma classe de estilo enquanto arrasta
-    console.log('Drag iniciado');
-  });   
-// Evento dragenter - elemento entra na área de drop
-  dropzone.addEventListener('dragenter', (event) => {
+// Função para permitir o drop em um contêiner
+function allowDrop(event) {
     event.preventDefault();
-    dropzone.classList.add('over');
-    console.log('Entrou na área de drop');
-  });
+}
 
-  // Evento dragover - elemento está sobre a área de drop
-dropzone.addEventListener('dragover', (event) => {
-    event.preventDefault(); // Necessário para permitir o drop
-    console.log('Elemento sobre a área de drop');
-  });
-
-// Evento dragleave - elemento deixa a área de drop
-dropzone.addEventListener('dragleave', () => {
-    dropzone.classList.remove('over');
-    console.log('Saiu da área de drop');
-  });
-
-  // Evento drop - elemento é solto na área de drop
-dropzone.addEventListener('drop', (event) => {
+// Função para lidar com o drop
+function handleDrop(event) {
     event.preventDefault();
-    dropzone.classList.remove('over');
     const draggableId = event.dataTransfer.getData('text/plain');
     const draggableElement = document.getElementById(draggableId);
-    dropzone.appendChild(draggableElement); // Move o elemento arrastável para dentro da área de drop
-    console.log('Elemento solto na área de drop');
-  });
+    
+    if (draggableElement) {
+        event.target.appendChild(draggableElement);
+        console.log('Elemento movido');
+    } else {
+        console.error('Elemento não encontrado para o ID:', draggableId);
+    }
+}
 
-// mover as outras imagens
+// Função para remover a imagem da área de favoritos e retornar à galeria
+function removeImage(event) {
+    const draggableElement = event.target.closest('.draggable');
+    if (draggableElement) {
+        originalContainer.appendChild(draggableElement);
+        console.log('Imagem retornada à galeria');
+    } else {
+        console.error('Elemento não encontrado ao tentar retornar à galeria');
+    }
+}
 
-draggables.forEach(draggable =>{
-  draggable.addEventListener('dragstart', (event) =>{
-    event.dataTransfer.setData('text/plain', event.target.id);
-    draggable.classList.add('dragging'); // Adiciona uma classe de estilo enquanto arrasta
-    console.log('Drag iniciado');
-  });
-  // Evento dragend - finaliza o arrasto
-  draggable.addEventListener('dragend', () => {
-    draggable.classList.remove('dragging');
-    console.log('Drag finalizado');
-  });
-}); 
+// Adicionando eventos para os elementos arrastáveis
+draggables.forEach(draggable => {
+    draggable.addEventListener('dragstart', (event) => {
+        event.dataTransfer.setData('text/plain', draggable.id);
+        draggable.classList.add('dragging'); // Adiciona uma classe de estilo enquanto arrasta
+        console.log('Drag iniciado para', draggable.id);
+    });
+
+    draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('dragging');
+        console.log('Drag finalizado');
+    });
+
+    // Adicionando evento de clique para retornar a imagem à galeria
+    draggable.querySelector('img').addEventListener('click', (event) => {
+        if (event.target.closest('.dropzone')) {
+            removeImage(event);
+        }
+    });
+});
+
+// Adicionando eventos para permitir drop nos contêineres
+dropzone.addEventListener('dragover', allowDrop);
+dropzone.addEventListener('drop', handleDrop);
+
+originalContainer.addEventListener('dragover', allowDrop);
+originalContainer.addEventListener('drop', handleDrop);
