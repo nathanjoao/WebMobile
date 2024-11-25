@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consulta de Previsão do Tempo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Consulta de previsão do tempo</h1>
-    <form id="cidadeForm">
-        <label for="cidade">Digite o nome da cidade:</label>
-        <input type="text" id="cidade" maxlength="30" placeholder="Ex: Curitiba">
-        <button type="submit">Buscar</button>
-    </form>
-    <div id="resultado">
-        <h2>Resultado:</h2>
-        <p id="name"></p>
-        <p id="country"></p>
-        <p id="region"></p>
-        <p id="temp_c"></p>
+    <div class="container">
+        <h1>Previsão do Tempo</h1>
+        <form id="cidadeForm">
+            <input type="text" id="cidade" maxlength="30" placeholder="Digite o nome da cidade">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="resultado" class="hidden">
+            <h2>Resultado:</h2>
+            <p id="name"></p>
+            <p id="country"></p>
+            <p id="region"></p>
+            <p id="temp_c"></p>
+            <p id="condition"></p>
+            <p id="humidity"></p>
+            <p id="date"></p>
+        </div>
     </div>
-    <script src="/atividade.js"></script>
+    <script src="atividade.js"></script>
 </body>
 
 </html>
