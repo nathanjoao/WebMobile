@@ -16,7 +16,7 @@ document.getElementById("cidadeForm").addEventListener('submit', async (event) =
         document.getElementById('humidity').textContent = `Humidade: ${data.current.humidity}%`;
         document.getElementById('date').textContent = `Data e horário: ${data.location.localtime}`;
         document.getElementById('resultado').classList.remove('hidden');
-    } catch (error) {
+    } catch (error) {   
         alert(`Ocorreu um erro: ${error.message}`);
     }
 });
